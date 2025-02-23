@@ -146,7 +146,7 @@ all_posts = [
     """
   },
   {
-    "slug": "iymc-suggestions",
+    "slug": "iymc-at-a-glance",
     "image": "iymc.jpg",
     "author": "anish0m",
     "date": date(2022, 10, 16),
@@ -155,11 +155,15 @@ all_posts = [
       Ready to prove your math genius and rise to the top globally?
     """,
     "content": """
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      The International Youth Math Challenge (IYMC) is a highly regarded global competition that invites young students to put their mathematical skills to the test. It’s designed to challenge participants with a series of increasingly difficult problems in various branches of mathematics, from algebra and geometry to number theory and combinatorics. The competition draws participants from all over the world, providing a platform for them to not only compete but also collaborate with like-minded peers who share a passion for problem-solving.
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      The competition begins with the Qualification Round, where participants are presented with a series of questions that cover foundational mathematical concepts. This round tests a broad range of skills, including logical reasoning, basic problem-solving techniques, and the ability to apply known mathematical formulas. The problems are designed to assess a contestant’s understanding of core mathematical principles, but they also require some creative thinking. Those who successfully solve the Qualification Round problems advance to the next stage, based on their performance.
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      For those who move on, the Pre-Final Round presents a step-up in complexity. The problems in this round demand a deeper understanding of mathematical theory and the ability to solve more abstract problems. This stage is often time-constrained, pushing participants to think critically and solve problems efficiently under pressure. Some problems might require the use of advanced techniques in algebra, calculus, or combinatorics, while others challenge participants to think outside the box and use mathematical reasoning in novel ways. Only the best performers make it to the Final Round, where the ultimate challenges await.
+
+      The Final Round of the IYMC is where the highest-achieving participants face the most difficult problems of all. These questions require not only deep mathematical knowledge but also advanced problem-solving skills and creativity. Some problems are designed to test participants' ability to formulate mathematical models for real-world scenarios, while others delve into complex theoretical math. The Final Round often includes questions that are open-ended, requiring participants to justify their solutions and demonstrate their reasoning process clearly. This is the ultimate test for the brightest mathematical minds, and only the top scorers are awarded with the prestigious recognition that comes with performing well in the competition.
+
+      The International Youth Math Challenge offers significant rewards and recognition for those who excel. High-ranking participants receive certificates that showcase their accomplishments, with special awards for the highest performers in each age group. These awards are valuable additions to any academic portfolio, especially for students who aspire to pursue careers in mathematics, science, or engineering. Beyond the recognition, the competition opens doors to scholarships, internships, and other opportunities for young mathematicians to further develop their skills and pursue academic excellence.
     """
   },
   {
