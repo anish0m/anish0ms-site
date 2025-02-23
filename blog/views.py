@@ -115,11 +115,13 @@ all_posts = [
       From developing characters to shaping plot twists, every decision opens a new world for readers to explore.
     """,
     "content": """
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      Writing my first interactive story was an experience unlike any other—a mix of creativity, excitement, and plenty of trial and error. The process began with a simple idea, but bringing it to life required careful planning. Choosing the right genre, developing compelling characters, and designing multiple story paths made me appreciate the complexity behind interactive storytelling. Unlike traditional writing, where the plot moves in a single direction, an interactive story demands choices that truly impact the outcome. Every decision the reader makes must feel meaningful, pushing the narrative in exciting and unexpected ways.
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      Character development quickly became one of the most engaging parts of the process. In an interactive story, characters aren’t just personalities on a page; they react differently based on the reader’s choices. Crafting relatable, multidimensional characters required thinking beyond just their looks or backstories. I had to ensure they had unique dialogue styles, distinct motivations, and emotional depth. Balancing multiple love interests, rivalries, or friendships while maintaining consistency across different story paths was challenging, but it made the experience feel more real and immersive.
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      Plot twists were another thrilling aspect of the journey. Unlike linear stories, interactive plots needed multiple branches, each leading to different consequences. This meant foreshadowing key events while making sure no path felt weaker than the others. I experimented with different scenarios—what if a character betrayed the protagonist? What if the reader’s choices led to an unexpected alliance? Keeping the suspense alive without making the story too predictable or confusing took careful structuring. Testing different choices and seeing how they played out helped refine the pacing and depth of the narrative.
+
+      By the time I finished my first episode story, I realized just how much effort goes into creating an engaging interactive experience. Every detail, from the smallest dialogue choice to major plot developments, shaped the journey for the reader. It was more than just writing—it was world-building, game design, and storytelling combined. Seeing players immerse themselves in the story, eagerly anticipating what would happen next, made all the effort worthwhile. The process was a rollercoaster, but one I would gladly ride again.
     """
   },
   {
