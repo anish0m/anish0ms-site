@@ -125,7 +125,7 @@ all_posts = [
     """
   },
   {
-    "slug": "iaac-suggestions",
+    "slug": "iaac-at-a-glance",
     "image": "iaac.jpg",
     "author": "anish0m",
     "date": date(2021, 6, 29),
@@ -134,11 +134,15 @@ all_posts = [
       Ready to take on the mysteries of the universe and prove your stellar abilities?
     """,
     "content": """
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      The International Astronomy and Astrophysics Competition (IAAC) is a global challenge that attracts students from all over the world, offering them the opportunity to demonstrate their knowledge in the fields of astronomy, astrophysics, and mathematics. The competition is structured to gradually increase in difficulty, with each round pushing participants to apply both theoretical knowledge and problem-solving abilities to complex questions. The contest is completely online, allowing participants from different regions to compete on an equal platform, making it accessible to a wider audience.
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      The journey begins with the Qualification Round, where contestants face a set of questions designed to test their understanding of fundamental concepts in astronomy and physics. These problems often require participants to apply basic formulas, understand celestial phenomena, and perform simple calculations related to planetary motions and gravitational forces. The Qualification Round is open-book, but its difficulty lies in the requirement for precise analysis and the ability to connect different concepts, which challenges participants to think critically. Successful completion of this round is a prerequisite for moving forward to the next stage.
 
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero velit ex cupiditate maxime cum repellendus eligendi delectus, fuga possimus nobis atque odio, sequi doloremque voluptatum aliquid illum a, temporibus itaque.
+      For those who pass the initial round, the Pre-Final Round presents more complex problems, testing deeper knowledge of astrophysics and astronomical observation. Here, participants face stricter time limits, and the problems demand more advanced reasoning, including interpreting astronomical data, solving intricate mathematical equations, and applying theoretical models to real-world space phenomena. The pressure intensifies, and only those with the strongest grasp of the subject move on to the Final Round. This stage of the competition requires not just skill but also the ability to manage time efficiently while solving sophisticated challenges.
+
+      The Final Round is the pinnacle of the IAAC, where the best of the best face the most difficult challenges. The problems in this stage are designed to test the participants' in-depth understanding of astrophysics, advanced mathematical principles, and their ability to synthesize information to solve complex problems. Sometimes the questions include live assessments or involve real data analysis, making the experience even more immersive. The participants’ performance in this round is a direct reflection of their problem-solving capabilities, their creativity in applying scientific principles, and their ability to communicate their thought processes effectively.
+
+      Aside from the intellectual stimulation, IAAC offers significant recognition for its top performers. High-ranking students receive certificates that showcase their excellence in astronomy and astrophysics, and many winners gain access to opportunities such as scholarships, internships, and the chance to have their solutions published in scientific journals. Ultimately, participating in the IAAC is a great way for aspiring astrophysicists and astronomers to put their skills to the test, gain international recognition, and take the next step toward a future in space science.
     """
   },
   {
