@@ -56,25 +56,4 @@
 
   Perhaps what makes nature truly special is its unpredictability. No two sunsets are ever the same, no two seasons unfold in identical ways. Nature constantly surprises us, offering beauty in the most unexpected places. Whether it's a field of wildflowers blooming after a storm or a rare sighting of a shooting star on a quiet night, these moments remind us that the world is full of wonders waiting to be noticed. And when we take the time to embrace them, even for just a few seconds, everything feels just right.
 """
-},
-{
-"slug": "planet-pluto",
-"image": "pluto.jpg",
-"author": "anish0m",
-"date": date(2015, 7, 31),
-"title": "Pluto: Our Lost Planet",
-"excerpt": """Kicked out of the planetary club, Pluto still holds secrets that make it mysterious and captivating. 
-  Why does this icy world continue to challenge everything we thought we knew?
-""",
-"content": """
-  Pluto was once the ninth planet of our solar system, a small yet significant member of the planetary family. However, in 2006, the International Astronomical Union (IAU) redefined what it means to be a planet, and Pluto was reclassified as a "dwarf planet." This decision sparked heated debates among scientists and space enthusiasts alike. Many argued that Pluto deserved its planetary status, while others supported the scientific reasoning behind its reclassification. Despite being kicked out of the planetary club, Pluto remains one of the most fascinating celestial bodies, continuing to challenge our understanding of the solar system.
-
-  One of the most mysterious aspects of Pluto is its composition and atmosphere. Unlike the gas giants or rocky planets, Pluto is a world of ice and rock, with a surface covered in frozen nitrogen, methane, and carbon monoxide. Its atmosphere is thin but dynamic, expanding and collapsing as Pluto moves along its elliptical orbit. The discovery of towering ice mountains and vast, smooth plains by NASA’s New Horizons mission in 2015 shattered previous assumptions about Pluto being a static, lifeless rock. Instead, Pluto appears to be geologically active, raising questions about what powers such activity in an object so far from the Sun.
-
-  Pluto's largest moon, Charon, adds another layer of intrigue. Charon is so large relative to Pluto that the two bodies orbit a common center of gravity, making them more of a binary system than a traditional planet-moon relationship. This unique setup challenges our understanding of celestial mechanics and raises questions about how such a system formed. Some scientists believe that a massive collision early in the solar system’s history created Charon, much like how Earth’s Moon was formed. The deep canyons and geological features on Charon also suggest a complex history that we are only beginning to understand.
-
-  Despite its demotion, Pluto remains a key to unlocking the secrets of the Kuiper Belt—a vast region beyond Neptune filled with icy bodies and remnants from the early solar system. Studying Pluto helps scientists understand the formation of planets, the evolution of atmospheres, and even the potential for hidden oceans beneath icy exteriors. Some researchers speculate that beneath Pluto’s icy shell, a subsurface ocean might exist, kept warm by internal heat. If true, this would raise exciting possibilities about the potential for microbial life in places we least expect.
-
-  Pluto may no longer be classified as a planet, but its mysteries continue to captivate astronomers and space enthusiasts. It challenges our understanding of planetary science, reminding us that space is full of surprises. The debate over its classification lingers, but perhaps what truly matters is not whether Pluto is a planet, but what it can teach us about the universe. As space exploration advances, future missions may one day reveal even more secrets about this icy world, proving that Pluto is far from forgotten.
-"""
 }
