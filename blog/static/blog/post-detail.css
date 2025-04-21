@@ -78,7 +78,7 @@ main {
 #comment-form {
   margin: 3rem auto;
   width: 90%;
-  max-width: 40rem;
+  max-width: 90rem;
   border-radius: 12px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
@@ -148,7 +148,7 @@ main {
   background-color: #ffe6e7;
   padding: 1rem;
   width: 90%;
-  max-width: 40rem;
+  max-width: 90rem;
 }
 
 #alert a {
@@ -158,4 +158,39 @@ main {
   color: white;
   padding: 0.25rem 1.5rem;
   border-radius: 6px;
+}
+
+#comments {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 90rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem 2rem;
+}
+
+#comments h2 {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #cccccc;
+}
+
+#comments h3 {
+  color: #464646;
+}
+
+#comments ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#comments li {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#comments li:last-of-type {
+  border-bottom: none;
 }

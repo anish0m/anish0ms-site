@@ -45,6 +45,22 @@
     {{ post.content|linebreaks }}
   </main>
 
+  <section id="comments">
+    <h2>Comments</h2>
+    {% if post.comments.count == 0 %}
+      <p>No comments yet. Be the first to comment!</p>
+    {% else %}
+      <ul>
+        {% for comment in comments %}
+          <li>
+            <h3>{{ comment.username }}</h3>
+            <p>{{ comment.text|linebreaks }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </section>
+
   <section id="comment-form">
     <h2>Your Comment Here...</h2>
     <form action="{% url "post-detail-page" post.slug %}" method="post">
