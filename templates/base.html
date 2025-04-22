@@ -14,8 +14,8 @@
   <header id="main-navigation">
     <h1><a href="{% url "starting-page" %}">anish0m's Blog</a></h1>
     <nav>
+      <a href="{% url "read-later" %}">Saved Posts</a>
       <a href="{% url "posts-page" %}">All Posts</a>
-      <a href="{% url "read-later" %}">Stored Posts</a>
     </nav>
   </header>
   {% block content %}{% endblock %}
