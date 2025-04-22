@@ -6,15 +6,14 @@
 
 {% block content %}
   <section>
+    {% if not has_posts %}
+      <p>No saved posts yet.</p>
+    {% endif %}
     <ul>
-      <li>
-        <a href="">Post Title</a>
-      </li>
-      <li>
-        <a href="">Post Title</a>
-      </li>
-      <li>
-        <a href="">Post Title</a>
-      </li>
+      {% for post in posts %}
+        <li>
+          <a href="{% url "post-detail-page" post.slug %}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
   </section>
 {% endblock %}
