@@ -9,14 +9,17 @@ body {
 
 #summary {
   margin: 8rem auto 3rem auto;
-  padding: 2rem;
+  padding: 3rem;
   width: 90%;
   max-width: 90rem;
   border-radius: 16px;
   background-color: #1A4C39;
   position: relative;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  height: 22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 #summary h2 {
@@ -26,9 +29,8 @@ body {
 }
 
 #summary article {
-  position: absolute;
-  top: 2rem;
-  right: 3rem;
+  position: relative;
+  margin-top: 2rem;
   padding: 1rem 2rem;
   border-radius: 12px;
   text-align: right;

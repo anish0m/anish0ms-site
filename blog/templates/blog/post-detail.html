@@ -20,19 +20,28 @@
   {% endif %}
 
   <section id="summary">
-    <h2>{{ post.title }}</h2>
     <div>
-      {% for tag in post_tags %}
-        <span class="tag">{{ tag }}</span>
-      {% endfor%}
+      <h2>{{ post.title }}</h2>
+      <div>
+        {% for tag in post_tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      <div id="read-later">
+        <form action="{% url "read-later" %}" method="POST">
+          {% csrf_token %}
+          <input type="hidden" name="post_id" value="{{ post.id }}" />
+          <button>
+            {% if saved_for_later %}
+              Remove from "Read Later"
+            {% else %}
+              Read Later
+            {% endif %}
+          </button>
+        </form>
+      </div>
     </div>
-    <div id="read-later">
-      <form action="{% url "read-later" %}" method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="post_id" value="{{ post.id }}"/>
-        <button>Read Later</button>
-      </form>
-    </div>
+    {% comment %} <img src="{{ post.image.url }}" alt="{{ post.title }}" /> {% endcomment %}
     <article>
       <img src="{{ post.image.url }}" alt={{ post.title }}/>
       <address>
@@ -41,7 +50,8 @@
         </a>
       </address>
       <div>
-        Last updated on <time>
+        Last updated on 
+        <time>
           {{ post.date|date:"d M Y" }}
         </time>
       </div>
