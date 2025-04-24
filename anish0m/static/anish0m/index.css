@@ -1,0 +1,57 @@
+#my-contents ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#my-contents li {
+  flex: 1;
+  max-width: 300px;
+}
+
+#my-contents a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Scale the card slightly */
+  background-color: #0D261C; /* Change background color to match the hover effect */
+  color: white; /* Change text color to white */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+
+.card:hover h3,
+.card:hover p {
+  color: white; /* Ensure text inside the card changes to white */
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  border-radius: 50%; /* Keep the circular image style */
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: black; /* Default text color */
+}
+
+.card p {
+  margin: 0;
+  color: #555; /* Default text color */
+}

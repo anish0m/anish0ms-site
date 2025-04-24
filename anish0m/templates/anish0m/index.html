@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+  @anish0m's
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "/anish0m/index.css" %}"/>
+{% endblock  %}
+
+{% block content %}
+  <section id="my-contents">
+      <ul>
+          {% for content in contents %}
+          <li>
+              <a href="#">
+                  <div class="card">
+                      <img src="#" alt="{{ content.name }} Icon" />
+                      <h3>{{ content.name }}</h3>
+                      <p>{{ content.description }}</p>
+                  </div>
+              </a>
+          </li>
+          {% endfor %}
+      </ul>
+  </section>
+{% endblock %}
