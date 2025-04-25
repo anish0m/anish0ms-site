@@ -3,6 +3,9 @@ from django.core.validators import MinLengthValidator
 from django.core.exceptions import ValidationError
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
+from django.core.validators import MinValueValidator, MaxValueValidator
+
+from decimal import Decimal
 
 # Create your models here.
 
@@ -67,3 +70,17 @@ def update_no_of_books_on_delete(sender, instance, **kwargs):
     book = instance.book
     book.no_of_books = book.sub_books.count()
     book.save()
+
+
+class Comment(models.Model):
+    username = models.CharField(max_length=120)
+    rating = models.DecimalField(
+        max_digits=2, 
+        decimal_places=1, 
+        validators=[
+            MinValueValidator(Decimal('0.0')), 
+            MaxValueValidator(Decimal('5.0'))
+        ]
+    )
+    text = models.TextField(max_length=400)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name="comments")

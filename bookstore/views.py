@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.views import View
 from django.views.generic import ListView
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 from .models import Book
+from .forms import CommentForm
 
 # Create your views here.
 
@@ -27,27 +30,27 @@ class SingleBookView(View):
         context = {
             "book": book,
             "book_tags": book.tags.all(),
-            # "comment_form": CommentForm(),
-            # "comments": book.comments.all().order_by("-id"),
+            "comment_form": CommentForm(),
+            "comments": book.comments.all().order_by("-id"),
         }
         return render(request, "bookstore/book-detail.html", context)
 
     def book(self, request, slug):
-        # comment_form = CommentForm(request.book)
+        comment_form = CommentForm(request.book)
         book = Book.objects.get(slug=slug)
 
-        # if comment_form.is_valid():
-        #     comment = comment_form.save(commit=False)
-        #     comment.book = book
-        #     comment.save()
+        if comment_form.is_valid():
+            comment = comment_form.save(commit=False)
+            comment.book = book
+            comment.save()
 
-        #     return HttpResponseRedirect(reverse("book-detail-page", args=[slug]))
+            return HttpResponseRedirect(reverse("book-detail-page", args=[slug]))
 
         context = {
             "book": book,
             "book_tags": book.tags.all(),
-            # "comment_form": comment_form,
-            # "comments": book.comments.all(),
+            "comment_form": comment_form,
+            "comments": book.comments.all(),
         }
 
         return render(request, "bookstore/book-detail.html", context)
