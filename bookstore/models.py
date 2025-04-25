@@ -1,6 +1,8 @@
 from django.db import models
 from django.core.validators import MinLengthValidator
 from django.core.exceptions import ValidationError
+from django.db.models.signals import post_save, post_delete
+from django.dispatch import receiver
 
 # Create your models here.
 
@@ -32,6 +34,9 @@ class Book(models.Model):
     author = models.ForeignKey(
         Author, null=True, on_delete=models.SET_NULL, related_name="books")
     no_of_books = models.IntegerField(default=0, editable=False)
+    starter_price = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    complete_price = models.DecimalField(max_digits=10, decimal_places=2)
+    ultimate_price = models.DecimalField(max_digits=10, decimal_places=2)
     tags = models.ManyToManyField(Tag)
 
 
@@ -50,3 +55,15 @@ class SubBook(models.Model):
 
     def __str__(self):
         return self.title
+
+@receiver(post_save, sender=SubBook)
+def update_no_of_books_on_save(sender, instance, **kwargs):
+    book = instance.book
+    book.no_of_books = book.sub_books.count()
+    book.save()
+
+@receiver(post_delete, sender=SubBook)
+def update_no_of_books_on_delete(sender, instance, **kwargs):
+    book = instance.book
+    book.no_of_books = book.sub_books.count()
+    book.save()
