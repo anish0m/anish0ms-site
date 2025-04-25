@@ -1,3 +1,24 @@
+from django import forms
 from django.contrib import admin
 
+from .models import Book, Author, Tag
+
 # Register your models here.
+
+class BookAdminForm(forms.ModelForm):
+    class Meta:
+        model = Book
+        fields = "__all__"
+        widgets = {
+            "tags": forms.CheckboxSelectMultiple()
+        }
+
+class BookAdmin(admin.ModelAdmin):
+    form = BookAdminForm
+    list_filter = ("author", "tags", "date",)
+    list_display = ("title", "date", "author",)
+    prepopulated_fields = {"slug": ("title",)}
+
+admin.site.register(Book, BookAdmin)
+admin.site.register(Author)
+admin.site.register(Tag)  
