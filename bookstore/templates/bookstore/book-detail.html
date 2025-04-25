@@ -30,5 +30,24 @@
 
 
 {% block content %}
-
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center text-md-start">
+          <h1>
+              <div class="display-2">{{ book.title }}</div>
+              <div class="display-5 text-muted">{{ book.excerpt }}</div>
+          </h1>
+          <p class="lead my-4 text-muted">{{ book.content }}</p>
+          <a href="#" class="btn btn-secondary btn-lg">Buy Now!</a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <!-- tooltip -->
+          <span class="tt" data-bs-placement="bottom" title="{{ book.title }}">
+              <img class="img-fluid" src="{{ book.image.url }}" alt="book-cover" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

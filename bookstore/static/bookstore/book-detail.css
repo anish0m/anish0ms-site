@@ -3,3 +3,66 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
+/* Style for the intro section */
+#intro {
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Light gray background */
+  margin-top: 5rem;
+}
+
+#intro h1 .display-2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #343a40; /* Dark text color */
+}
+
+#intro h1 .display-5 {
+  font-size: 1.5rem;
+  color: #6c757d; /* Muted text color */
+}
+
+#intro p.lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #6c757d; /* Muted text color */
+}
+
+#intro .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#intro .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+#intro img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#intro .tt {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#intro .tt:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #343a40;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  z-index: 10;
+}
