@@ -10,5 +10,20 @@
 {% endblock  %}
 
 {% block content %}
-    <p>Hello World!</p>
+  <section id="welcome">
+    <header>
+      <img src="{% static "blog/images/anish0m.png" %}" alt="anish0m - The Author of This Blog"/>
+      <h2>anish0m's Bookstore</h2>
+    </header>
+    <p>Hi, I am anish0m and I love to blog about tech and the world!</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>My Latest Collections</h2>
+    {% comment %} <ul>
+      {% for post in posts %}
+        {% include "blog/includes/post.html" %}
+      {% endfor %}
+    </ul> {% endcomment %}
+  </section>
 {% endblock %}

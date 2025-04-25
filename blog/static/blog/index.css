@@ -57,20 +57,3 @@
 #latest-posts li {
   flex: 1;
 }
-
-#about {
-  text-align: center;
-  padding: 3rem;
-  background-color: #1f1f1f;
-  margin-top: 5rem;
-}
-
-#about h2 {
-  font-size: 3rem;
-  color: white;
-}
-
-#about p {
-  font-size: 1.5rem;
-  color: #ccc;
-}

@@ -84,38 +84,3 @@
 #my-contents h3 {
   margin: 0.25rem 0;
 }
-
-#about {
-  text-align: center;
-  padding: 3rem;
-  background-color: #1f1f1f;
-  margin-top: 5rem;
-}
-
-#about h2 {
-  font-size: 3rem;
-  color: white;
-}
-
-#about p {
-  font-size: 1.5rem;
-  color: #ccc;
-}
-
-#about div {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-#about a {
-  color: white;
-  font-size: 2rem;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-#about a:hover {
-  transform: scale(1.2);
-}
