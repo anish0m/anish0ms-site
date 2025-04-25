@@ -6,19 +6,19 @@
 /* Style for the intro section */
 #intro {
   padding: 50px 0;
-  background-color: #f8f9fa; /* Light gray background */
   margin-top: 5rem;
 }
 
 #intro h1 .display-2 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #343a40; /* Dark text color */
 }
 
 #intro h1 .display-5 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #6c757d; /* Muted text color */
+  padding-top: 1rem;
 }
 
 #intro p.lead {
@@ -65,4 +65,62 @@
   font-size: 0.9rem;
   white-space: nowrap;
   z-index: 10;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 4rem 0;
+}
+
+#pricing h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#pricing p.lead {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+#pricing .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pricing .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#pricing .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#pricing .card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+#pricing .display-5,
+#pricing .display-4 {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#pricing .btn-outline-primary {
+  border-width: 2px;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#pricing .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
 }
