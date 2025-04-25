@@ -12,11 +12,11 @@
 </head>
 <body>
   <header id="main-navigation">
-    <h1><a href="{% url "starting-page-blog" %}">anish0m's Blog</a></h1>
-    <nav>
+    <h1><a href="{% url "starting-page" %}">anish0m's Blog</a></h1>
+    {% comment %} <nav>
       <a href="{% url "read-later" %}">Saved Posts</a>
       <a href="{% url "posts-page" %}">All Posts</a>
-    </nav>
+    </nav> {% endcomment %}
   </header>
   {% block content %}{% endblock %}
 </body>

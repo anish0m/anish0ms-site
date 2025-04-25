@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
   @anish0m's
@@ -10,18 +11,23 @@
 
 {% block content %}
   <section id="my-contents">
-      <ul>
-          {% for content in contents %}
-          <li>
-              <a href="#">
-                  <div class="card">
-                      <img src="#" alt="{{ content.name }} Icon" />
-                      <h3>{{ content.name }}</h3>
-                      <p>{{ content.description }}</p>
-                  </div>
-              </a>
-          </li>
-          {% endfor %}
-      </ul>
+    <ul>
+      <li>
+        <a href="{% url 'starting-page-blog' %}">
+          <div class="card">
+            <h3>anish0m's Blog</h2>
+            <p>Explore all blog posts and articles.</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="{% url 'starting-page-bookstore' %}">
+          <div class="card">
+            <h3>anish0m's Bookstore</h2>
+            <p>Find your favorite books at affordable prices.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
   </section>
 {% endblock %}
