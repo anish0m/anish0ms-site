@@ -15,14 +15,16 @@
   {% block css_files %}{% endblock %}
 </head>
 <body>
-  <header id="main-navigation">
-    <h1><a href="{% url "starting-page" %}">@anish0m's</a></h1>
-    {% comment %} <nav>
-      <a href="{% url "read-later" %}">Saved Posts</a>
-      <a href="{% url "posts-page" %}">All Posts</a>
-    </nav> {% endcomment %}
-  </header>
-  {% block content %}{% endblock %}
+  <section id="header">
+    <header id="main-navigation">
+      {% block navbar %}{% endblock %}
+      <h1><a href="{% url "starting-page" %}">@anish0m's</a></h1>
+    </header>
+  </section>
+  
+  <section id="content">
+    {% block content %}{% endblock %}
+  </section>
 
   <section id="about">
     <h2>Trying to Reach Out?</h2>
