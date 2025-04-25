@@ -10,24 +10,48 @@
 {% endblock  %}
 
 {% block content %}
+  <section id="welcome">
+    <header>
+      <img src="{% static "blog/images/anish0m.png" %}" alt="anish0m - The Owner"/>
+      <h2>@anish0m's</h2>
+    </header>
+  </section>
   <section id="my-contents">
     <ul>
       <li>
-        <a href="{% url 'starting-page-blog' %}">
-          <div class="card">
-            <h3>anish0m's Blog</h2>
-            <p>Explore all blog posts and articles.</p>
-          </div>
-        </a>
+        <article>
+          <a href="{% url 'starting-page-blog' %}">
+            <img src="{% static 'anish0m/images/blog.jpg' %}" alt="anish0m's blog"/>
+            <div class="description">
+              <h3>anish0m's Blog</h3>
+              <p>Having thoughts on the latest trends in technology?</p>
+              <p>Join me on my blog to explore my insights and share your own ideas!</p>
+            </div>
+          </a>
+        </article>
       </li>
       <li>
-        <a href="{% url 'starting-page-bookstore' %}">
-          <div class="card">
-            <h3>anish0m's Bookstore</h2>
-            <p>Find your favorite books at affordable prices.</p>
-          </div>
-        </a>
+        <article>
+          <a href="{% url 'starting-page-bookstore' %}">
+            <img src="{% static 'anish0m/images/bookstore.jpg' %}" alt="anish0m's bookstore"/>
+            <div class="description">
+              <h3>anish0m's Bookstore</h3>
+              <p>Looking for your next favorite book?</p>
+              <p>Visit my bookstore to find amazing books within your budget!</p>
+            </div>
+          </a>
+        </article>
       </li>
     </ul>
+  </section>
+
+  <section id="about">
+    <h2>Trying to Reach Out?</h2>
+    <p>Feel free to reach out to me on my social media handles.</p>
+    <div>
+      <a href="https://www.facebook.com/mohsina452" class="bi bi-facebook"></a>
+      <a href="https://www.x.com/anish0m" class="bi bi-twitter-x"></a>
+      <a href="mailto:mohsina.tabassum.rifa@gmail.com" class="bi bi-envelope"></a>
+    </div>
   </section>
 {% endblock %}
