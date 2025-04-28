@@ -13,21 +13,20 @@
   <nav class="navbar navbar-expand-md navbar-light">
     <ul class="navbar-nav">
       <li class="nav-item">
-          <a class="nav-link" href="#topics">About the Book</a>
+        <a class="nav-link" href="#topics">About the Book</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
+        <a class="nav-link" href="#reviews">Reviews</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#contact">Submit a Review</a>
+        <a class="nav-link" href="#contact">Submit a Review</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
       </li>
     </ul>
   </nav>
-{% endblock %}
-
+{% endblock %} 
 
 {% block content %}
   <section id="intro">
@@ -35,8 +34,8 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-md-5 text-center text-md-start">
           <h1>
-              <div class="display-2">{{ book.title }}</div>
-              <div class="display-5 text-muted">{{ book.excerpt }}</div>
+            <div class="display-2">{{ book.title }}</div>
+            <div class="display-5 text-muted">{{ book.excerpt }}</div>
           </h1>
           <p class="lead my-4 text-muted">{{ book.content }}</p>
           <a href="#" class="btn btn-secondary btn-lg">Buy Now!</a>
@@ -44,7 +43,7 @@
         <div class="col-md-5 text-center d-none d-md-block">
           <!-- tooltip -->
           <span class="tt" data-bs-placement="bottom" title="{{ book.title }}">
-              <img class="img-fluid" src="{{ book.image.url }}" alt="book-cover" />
+            <img class="img-fluid" src="{{ book.image.url }}" alt="book-cover" />
           </span>
         </div>
       </div>
@@ -63,9 +62,12 @@
             <div class="card-body text-center py-4">
               <h4 class="card-title">Starter Edition</h4>
               <p class="lead card-subtitle">eBook download only</p>
-              <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+              <p class="display-5 my-4 text-primary fw-bold">
+                ${{ book.starter_price }}
+              </p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">
-                Instant access to the digital edition for reading anytime, anywhere.
+                Instant access to the digital edition for reading anytime,
+                anywhere.
               </p>
               <a class="btn btn-outline-primary btn-lg mt-3" href="#">
                 Buy Now!
@@ -79,9 +81,12 @@
             <div class="card-body text-center py-5">
               <h4 class="card-title">Ultimate Edition</h4>
               <p class="lead card-subtitle">eBook download & hard-copies</p>
-              <p class="display-4 my-4 text-primary fw-bold">$24.99</p>
+              <p class="display-4 my-4 text-primary fw-bold">
+                ${{ book.ultimate_price }}
+              </p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">
-                Get both formats plus exclusive themed bookmarks to elevate your reading experience.
+                Get both formats plus exclusive themed bookmarks to elevate your
+                reading experience.
               </p>
               <a href="#" class="btn btn-outline-primary btn-lg mt-3">
                 Buy Now!
@@ -94,13 +99,62 @@
             <div class="card-body text-center py-4">
               <h4 class="card-title">Complete Edition</h4>
               <p class="lead card-subtitle">Get the hard-copies</p>
-              <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+              <p class="display-5 my-4 text-primary fw-bold">
+                ${{ book.complete_price }}
+              </p>
               <p class="card-text mx-5 text-muted d-none d-lg-block">
                 A beautifully printed physical book to add to your collection.
               </p>
               <a href="#" class="btn btn-outline-primary btn-lg mt-3">
-                  Buy Now!
+                Buy Now!
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="topics">
+    <div class="container-md">
+      <div class="text-center">
+        <h2>Inside the Book...</h2>
+        <p class="lead text-muted">A quick glance at this journey</p>
+      </div>
+      <div class="row my-5 g-5 justify-content-around align-items-center">
+        <div class="col-6 col-lg-4">
+          <img src="{% static "bookstore/images/ebook.png" %}" class="img-fluid" alt="ebook" />
+        </div>
+        <div class="col-lg-6">
+          <!-- accordion -->
+          <div class="accordion" id="chapters">
+            <div class="accordion-item">
+              {% for sub_book in book.sub_books.all %}
+                <h2 class="accordion-header" id="heading-{{ forloop.counter }}">
+                  <button
+                    class="accordion-button {% if not forloop.first %}collapsed{% endif %}"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-{{ forloop.counter }}"
+                    aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                    aria-controls="chapter-{{ forloop.counter }}"
+                  >
+                    {{ sub_book.title }}
+                  </button>
+                </h2>
+                <div
+                  id="chapter-{{ forloop.counter }}"
+                  class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                  aria-labelledby="heading-{{ forloop.counter }}"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      {{ sub_book.description }}
+                    </p>
+                  </div>
+                </div>
+              {% endfor %}
             </div>
           </div>
         </div>
