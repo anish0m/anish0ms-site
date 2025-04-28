@@ -119,87 +119,43 @@
     <div class="container-md">
       <div class="text-center">
         <h2>Inside the Book...</h2>
-        <p class="lead text-muted">A quick glance at the magical journey</p>
+        <p class="lead text-muted">A quick glance at this journey</p>
       </div>
       <div class="row my-5 g-5 justify-content-around align-items-center">
         <div class="col-6 col-lg-4">
-          <img src="/assets/ebook.png" class="img-fluid" alt="ebook" />
+          <img src="{% static "bookstore/images/ebook.png" %}" class="img-fluid" alt="ebook" />
         </div>
         <div class="col-lg-6">
           <!-- accordion -->
           <div class="accordion" id="chapters">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-1">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#chapter-1"
-                  aria-expanded="true"
-                  aria-controls="chapter-1"
+              {% for sub_book in book.sub_books.all %}
+                <h2 class="accordion-header" id="heading-{{ forloop.counter }}">
+                  <button
+                    class="accordion-button {% if not forloop.first %}collapsed{% endif %}"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-{{ forloop.counter }}"
+                    aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                    aria-controls="chapter-{{ forloop.counter }}"
+                  >
+                    {{ sub_book.title }}
+                  </button>
+                </h2>
+                <div
+                  id="chapter-{{ forloop.counter }}"
+                  class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                  aria-labelledby="heading-{{ forloop.counter }}"
+                  data-bs-parent="#chapters"
                 >
-                  Harry Potter and the Philosopher's Stone
-                </button>
-              </h2>
-              <div
-                id="chapter-1"
-                class="accordion-collapse collapse show"
-                aria-labelledby="heading-1"
-                data-bs-parent="#chapters"
-              >
-                <div class="accordion-body">
-                  <p>
-                    In the first installment, Harry discovers he is a wizard and
-                    begins his journey at Hogwarts School of Witchcraft and
-                    Wizardry. Guided by his new friends and mentors, he unravels
-                    the truth about his parents and the powerful, dark wizard who
-                    seeks immortality.
-                  </p>
-                  <p>
-                    The story introduces a world filled with magic, wonder, and
-                    danger as Harry faces trials that test his courage. He
-                    ultimately confronts Voldemort’s influence for the first time,
-                    proving his mettle as the boy who lived.
-                  </p>
+                  <div class="accordion-body">
+                    <p>
+                      {{ sub_book.description }}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              {% endfor %}
             </div>
-            <!-- Repeat for other chapters -->
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="heading-2">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#chapter-2"
-                  aria-expanded="false"
-                  aria-controls="chapter-2"
-                >
-                  Harry Potter and the Chamber of Secrets
-                </button>
-              </h2>
-              <div
-                id="chapter-2"
-                class="accordion-collapse collapse"
-                aria-labelledby="heading-2"
-                data-bs-parent="#chapters"
-              >
-                <div class="accordion-body">
-                  <p>
-                    In his second year at Hogwarts, Harry discovers a mysterious
-                    diary that leads him to the legend of the Chamber of Secrets.
-                    When students start turning to stone, he must solve the
-                    mystery and confront a monstrous foe hidden within the school.
-                  </p>
-                  <p>
-                    The story delves into themes of prejudice and bravery as Harry
-                    unravels the secrets of the past. Alongside Ron and Hermione,
-                    he faces dark forces that test their friendship and resolve.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Add other chapters similarly -->
           </div>
         </div>
       </div>
