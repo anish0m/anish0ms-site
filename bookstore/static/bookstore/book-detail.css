@@ -93,6 +93,10 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+#pricing .card.border-2 {
+  border: 1.5px solid #006401;
+}
+
 #pricing .card-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -101,26 +105,28 @@
 
 #pricing .card-subtitle {
   font-size: 1rem;
-  color: #46625a;
+  color: #006401;
   margin-bottom: 1rem;
 }
 
 #pricing .display-5,
 #pricing .display-4 {
   font-weight: bold;
-  color: #007bff;
+  color: #006401;
 }
 
 #pricing .btn-outline-primary {
-  border-width: 2px;
   font-size: 1rem;
+  color: #006401;
   padding: 0.5rem 1.5rem;
   border-radius: 8px;
+  border: 1.5px solid #006401;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #pricing .btn-outline-primary:hover {
-  background-color: #007bff;
+  background-color: #006401;
+  font-weight: bold;
   color: #fff;
 }
 
