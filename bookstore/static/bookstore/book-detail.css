@@ -193,12 +193,12 @@
 }
 
 #comment .btn-secondary {
-  background-color: #46625a;
-  border: none;
+  background-color: #1a4c39;
+  border-color: #0d261c;
 }
 
 #comment .btn-secondary:hover {
-  background-color: #3a524a;
+  background-color: #0d261c;
 }
 
 #reviews {
@@ -217,5 +217,6 @@
 #reviews .bi-star,
 #reviews .bi-star-half,
 #reviews .bi-star-fill {
-  color: #f39c12;
+  border-color: #f39c12;
+  color: #f5c542;
 }
