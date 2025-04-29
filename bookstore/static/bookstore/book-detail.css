@@ -153,10 +153,10 @@
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #e7f1ff;
+  background-color: #d9f5ed;
   border: 1px solid #ddd;
   font-weight: bold;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: #0d261c;
 }
 
 .accordion-body {
