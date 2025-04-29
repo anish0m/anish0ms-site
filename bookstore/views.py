@@ -23,6 +23,13 @@ class StartingPageView(ListView):
         return data
 
 
+class AllBooksView(ListView):
+    template_name = "bookstore/all-books.html"
+    model = Book
+    ordering = ["-date"]
+    context_object_name = "all_books"
+
+
 class SingleBookView(View):
     def get(self, request, slug):
         book = Book.objects.get(slug=slug)
