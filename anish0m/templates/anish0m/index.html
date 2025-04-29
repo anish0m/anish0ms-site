@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  @anish0m's
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "/anish0m/index.css" %}"/>
+{% endblock  %}
+
+{% block content %}
+  <section id="welcome">
+    <header>
+      <img src="{% static "blog/images/anish0m.png" %}" alt="anish0m - The Owner"/>
+      <h2>@anish0m's</h2>
+    </header>
+  </section>
+  
+  <section id="my-contents">
+    <ul>
+      <li>
+        <article>
+          <a href="{% url 'starting-page-blog' %}">
+            <img src="{% static 'anish0m/images/blog.jpg' %}" alt="anish0m's blog"/>
+            <div class="description">
+              <h3>anish0m's Blog</h3>
+              <p>Having thoughts on the latest trends in technology?</p>
+              <p>Join me on my blog to explore my insights and share your own ideas!</p>
+            </div>
+          </a>
+        </article>
+      </li>
+      <li>
+        <article>
+          <a href="{% url 'starting-page-bookstore' %}">
+            <img src="{% static 'anish0m/images/bookstore.jpg' %}" alt="anish0m's bookstore"/>
+            <div class="description">
+              <h3>anish0m's Bookstore</h3>
+              <p>Looking for your next favorite book?</p>
+              <p>Visit my bookstore to find amazing books within your budget!</p>
+            </div>
+          </a>
+        </article>
+      </li>
+    </ul>
+  </section>
+{% endblock %}

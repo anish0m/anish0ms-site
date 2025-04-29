@@ -16,21 +16,14 @@
       <img src="{% static "blog/images/anish0m.png" %}" alt="anish0m - The Author of This Blog"/>
       <h2>anish0m's Blog</h2>
     </header>
-    <p>Hi, I am anish0m and I love to blog about tech and the world!</p>
   </section>
 
   <section id="latest-posts">
-    <h2>My Latest thoughts</h2>
+    <h2>My Latest Thoughts</h2>
     <ul>
       {% for post in posts %}
         {% include "blog/includes/post.html" %}
       {% endfor %}
     </ul>
-  </section>
-
-  <section id="about">
-    <h2>What I do</h2>
-    <p>I explore new Technologies.</p>
-    <p>My goal is to keep growing as a developer.</p>
   </section>
 {% endblock %}

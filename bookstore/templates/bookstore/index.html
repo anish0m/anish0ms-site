@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  anish0m's Bookstore
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "/bookstore/index.css" %}"/>
+{% endblock  %}
+
+{% block content %}
+  <section id="welcome">
+    <header>
+      <img src="{% static "bookstore/images/anish0m.png" %}" alt="anish0m - The Owner"/>
+      <h2>anish0m's Bookstore</h2>
+    </header>
+  </section>
+
+  <section id="latest-books">
+    <h2>My Latest Collections</h2>
+    <ul>
+      {% for book in books %}
+        {% include "bookstore/includes/book.html" %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}

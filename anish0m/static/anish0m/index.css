@@ -28,12 +28,7 @@
   width: 10rem;
 }
 
-#welcome p {
-  color: white;
-  font-size: 1.5rem;
-}
-
-#latest-posts {
+#my-contents {
   background-color: white;
   padding: 2rem;
   border-radius: 12px;
@@ -42,11 +37,11 @@
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
 }
 
-#latest-posts h2 {
+#my-contents h2 {
   text-align: center;
 }
 
-#latest-posts ul {
+#my-contents ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -54,6 +49,38 @@
   gap: 1rem;
 }
 
-#latest-posts li {
+#my-contents li {
   flex: 1;
+}
+
+#my-contents article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#my-contents a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease;
+  padding: 1rem;
+}
+
+#my-contents a:hover,
+#my-contents a:active {
+  transform: scale(1.1);
+  background-color: #0D261C;
+  color: white;
+}
+
+#my-contents img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#my-contents h3 {
+  margin: 0.25rem 0;
 }

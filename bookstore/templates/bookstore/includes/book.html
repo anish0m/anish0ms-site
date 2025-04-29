@@ -1,0 +1,11 @@
+<li>
+  <article class="book">
+    <a href="{% url "book-detail-page" book.slug %}">
+      <img src="{{ book.image.url }}" alt="{{ book.title }}"/>
+      <div class="book__content">
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.excerpt|linebreaks }}</p>
+      </div>
+    </a>
+  </article>
+</li>
