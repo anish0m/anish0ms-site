@@ -3,7 +3,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* Style for the intro section */
+/* intro section */
 #intro {
   padding: 50px 0;
   margin-top: 5rem;
@@ -12,32 +12,31 @@
 #intro h1 .display-2 {
   font-size: 4rem;
   font-weight: bold;
-  color: #343a40; /* Dark text color */
+  color: #1a2b27; 
 }
 
 #intro h1 .display-5 {
   font-size: 2rem;
-  color: #6c757d; /* Muted text color */
+  color: #46625a;
   padding-top: 1rem;
 }
 
 #intro p.lead {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #6c757d; /* Muted text color */
+  color: #46625a; /* Muted text color */
 }
 
 #intro .btn-secondary {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #1a4c39;
+  border-color: #0d261c;
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
 }
 
 #intro .btn-secondary:hover {
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: #0d261c;
 }
 
 #intro img.img-fluid {
@@ -58,7 +57,7 @@
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #343a40;
+  background-color: #1a2b27;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -80,7 +79,7 @@
 
 #pricing p.lead {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: #46625a;
 }
 
 #pricing .card {
@@ -102,7 +101,7 @@
 
 #pricing .card-subtitle {
   font-size: 1rem;
-  color: #6c757d;
+  color: #46625a;
   margin-bottom: 1rem;
 }
 
@@ -156,7 +155,7 @@
 
 .accordion-body {
   background-color: #fff;
-  color: #343a40;
+  color: #1a2b27;
   border: 1px solid #ddd;
   border-top: none;
   border-radius: 0 0 5px 5px;
@@ -188,12 +187,12 @@
 }
 
 #comment .btn-secondary {
-  background-color: #6c757d;
+  background-color: #46625a;
   border: none;
 }
 
 #comment .btn-secondary:hover {
-  background-color: #5a6268;
+  background-color: #3a524a;
 }
 
 #reviews {
