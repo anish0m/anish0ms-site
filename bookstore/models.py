@@ -30,7 +30,7 @@ class Author(models.Model):
 class Book(models.Model):
     title = models.CharField(max_length=150)
     excerpt = models.CharField(max_length=200)
-    overview = models.CharField(max_length=200, null=True, blank=True)
+    overview = models.TextField(validators=[MinLengthValidator(10)], null=True, blank=True)
     image = models.ImageField(upload_to="books", null=True)
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True, db_index=True)

@@ -35,9 +35,11 @@ ul {
 }
 
 .post a {
-  height: 22rem;
+  height: 27rem;
   transform-origin: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   background-color: white;
+  overflow: hidden; /* Prevents content overflow */
+  justify-content: center;
 }
