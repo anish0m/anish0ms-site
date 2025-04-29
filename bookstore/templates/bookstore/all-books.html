@@ -11,10 +11,10 @@
 {% endblock  %}
 
 {% block content %}
-  <section id="all-Books">
+  <section id="all-books">
     <h2>My Collected Books</h2>
     <ul>
-      {% for book in all_Books %}
+      {% for book in all_books %}
         {% include "bookstore/includes/book.html" %}
       {% endfor %}
     </ul>
