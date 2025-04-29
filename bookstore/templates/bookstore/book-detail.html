@@ -162,6 +162,37 @@
     </div>
   </section>
 
+  {% load filters %}
+
+  <section id="reviews" class="bg-light">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2><i class="bi bi-chat-dots"></i> Reader Comments</h2>
+        <p class="lead">What readers are saying about this book...</p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-8">
+          <div class="list-group">
+            {% for comment in comments %}
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  {{ comment.rating|render_stars|safe }}
+                </div>
+                <h5 class="mb-1">{{ comment.username }}</h5>
+                <p class="mb-1">{{ comment.text }}</p>
+                <small>{{ comment.created_at|date:"F j, Y" }}</small>
+              </div>
+            {% empty %}
+              <div class="list-group-item py-3 text-center">
+                <p class="mb-1 text-muted">No comments yet. Be the first to share your thoughts!</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="comment">
     <div class="container-lg">
       <div class="text-center">

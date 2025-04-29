@@ -195,3 +195,22 @@
 #comment .btn-secondary:hover {
   background-color: #5a6268;
 }
+
+#reviews {
+  padding: 60px 0;
+}
+
+#reviews .list-group-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#reviews .list-group-item:last-child {
+  border-bottom: none;
+}
+
+#reviews .bi-star,
+#reviews .bi-star-half,
+#reviews .bi-star-fill {
+  color: #f39c12;
+}
