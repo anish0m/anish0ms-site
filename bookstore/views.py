@@ -35,8 +35,8 @@ class SingleBookView(View):
         }
         return render(request, "bookstore/book-detail.html", context)
 
-    def book(self, request, slug):
-        comment_form = CommentForm(request.book)
+    def post(self, request, slug):
+        comment_form = CommentForm(request.POST)
         book = Book.objects.get(slug=slug)
 
         if comment_form.is_valid():
