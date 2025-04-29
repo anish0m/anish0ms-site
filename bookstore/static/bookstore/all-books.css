@@ -7,13 +7,13 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-#all-posts {
+#all-books {
   margin: 7rem auto;
   width: 90%;
   max-width: 60rem;
 }
 
-#all-posts h2 {
+#all-books h2 {
   text-align: center;
   font-size: 2rem;
   color: #2e2e2e;
@@ -29,17 +29,15 @@ ul {
   gap: 1.5rem;
 }
 
-.post img {
+.book img {
   width: 7rem;
   height: 7rem;
 }
 
-.post a {
+.book a {
   height: 27rem;
   transform-origin: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   background-color: white;
-  overflow: hidden; /* Prevents content overflow */
-  justify-content: center;
 }
