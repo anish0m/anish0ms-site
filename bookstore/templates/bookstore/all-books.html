@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  All My Books
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "/bookstore/book.css" %}"/>
+  <link rel="stylesheet" href="{% static "/bookstore/all-books.css" %}"/>
+{% endblock  %}
+
+{% block content %}
+  <section id="all-Books">
+    <h2>My Collected Books</h2>
+    <ul>
+      {% for book in all_Books %}
+        {% include "bookstore/includes/book.html" %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
