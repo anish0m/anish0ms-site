@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="{% static "/blog/index.css" %}"/>
 {% endblock  %}
 
+{% block navbar %}
+  <nav class="navbar navbar-expand-md navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "posts-page" %}">See All Posts</a>
+      </li>
+    </ul>
+  </nav>
+{% endblock %} 
+
 {% block content %}
   <section id="welcome">
     <header>
