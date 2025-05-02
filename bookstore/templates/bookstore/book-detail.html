@@ -41,6 +41,11 @@
             <div class="display-5 text-muted">{{ book.excerpt }}</div>
           </h1>
           <p class="lead my-4 text-muted">{{ book.content }}</p>
+          <div class="my-4">
+            {% for tag in book_tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
           <a href="#" class="btn btn-secondary btn-lg">Buy Now!</a>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
