@@ -11,6 +11,7 @@ body {
   margin: 7rem auto;
   width: 90%;
   max-width: 60rem;
+  padding-top: 1.5rem;
 }
 
 #all-books h2 {

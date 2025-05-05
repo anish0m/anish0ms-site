@@ -10,6 +10,16 @@
   <link rel="stylesheet" href="{% static "/bookstore/all-books.css" %}"/>
 {% endblock  %}
 
+{% block navbar %}
+  <nav class="navbar navbar-expand-md navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "starting-page-bookstore" %}">anish0m's Bookstore</a>
+      </li>
+    </ul>
+  </nav>
+{% endblock %} 
+
 {% block content %}
   <section id="all-books">
     <h2>My Collected Books</h2>

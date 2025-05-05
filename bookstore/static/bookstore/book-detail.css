@@ -27,6 +27,14 @@
   color: #46625a; /* Muted text color */
 }
 
+.tag {
+  background-color: #1a4c39;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  opacity: 0.5;
+}
+
 #intro .btn-secondary {
   background-color: #1a4c39;
   border-color: #0d261c;
