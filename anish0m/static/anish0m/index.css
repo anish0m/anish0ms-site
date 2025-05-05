@@ -16,7 +16,7 @@
   object-position: top;
   border: 5px solid white;
   border-radius: 12px;
-  background-color: #ffe1bf;
+  background-color: #cfeee1;
   transform: rotateZ(-5deg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
