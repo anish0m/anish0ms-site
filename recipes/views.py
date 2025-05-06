@@ -16,3 +16,10 @@ class StartingPageView(ListView):
         data = queryset[:3]
 
         return data
+
+
+class AllRecipesView(ListView):
+    template_name = "recipes/all-recipes.html"
+    model = Recipe
+    ordering = ["-date"]
+    context_object_name = "all_recipes"
