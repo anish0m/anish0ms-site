@@ -1,10 +1,10 @@
 <li>
   <article class="recipe">
-    <a href="{% url "recipe-detail-page" recipe.slug %}">
+    <a href="">{% comment %} {% url "recipe-detail-page" recipe.slug %} {% endcomment %}
       <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}"/>
       <div class="recipe__content">
         <h3>{{ recipe.title }}</h3>
-        <p>{{ recipe.overview|linebreaks }}</p>
+        <p>{{ recipe.excerpt|linebreaks }}</p>
       </div>
     </a>
   </article>
