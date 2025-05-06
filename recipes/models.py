@@ -31,26 +31,23 @@ class Recipe(models.Model):
         return self.title
     
 class Ingredients(models.Model):
-    ingredient = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="ingredients")
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="ingredients")
     name = models.CharField(max_length=50)
     amount = models.CharField(max_length=50)
 
-    def required_ingredient(self, *args, **kwargs):
-        return f"{self.name} {self.amount}"
-
     def __str__(self):
-        return self.title
+        return f"{self.name} - {self.amount}"
 
 @receiver(post_save, sender=Ingredients)
 def update_no_of_ingredients_on_save(sender, instance, **kwargs):
     recipe = instance.recipe
-    recipe.no_of_ingredients = recipe.sub_recipes.count()
+    recipe.no_of_ingredients = recipe.ingredients.count()
     recipe.save()
 
 @receiver(post_delete, sender=Ingredients)
 def update_no_of_ingredients_on_delete(sender, instance, **kwargs):
     recipe = instance.recipe
-    recipe.no_of_ingredients = recipe.sub_recipes.count()
+    recipe.no_of_ingredients = recipe.ingredients.count()
     recipe.save()
 
 
