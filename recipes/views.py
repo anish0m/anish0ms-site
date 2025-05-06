@@ -6,7 +6,7 @@ from .models import Recipe
 # Create your views here.
 
 class StartingPageView(ListView):
-    template_name = "Recipestore/index.html"
+    template_name = "recipes/index.html"
     model = Recipe
     ordering = ["-date"]
     context_object_name = "recipes"
