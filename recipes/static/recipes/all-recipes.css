@@ -36,7 +36,7 @@ ul {
 }
 
 .recipe a {
-  height: 27rem;
+  height: 23rem;
   transform-origin: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
