@@ -22,6 +22,7 @@ class Recipe(models.Model):
     image = models.ImageField(upload_to="recipes", null=True)
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True, db_index=True)
+    description = models.TextField(validators=[MinLengthValidator(10)], null=True, blank=True)
     procedure = models.TextField(validators=[MinLengthValidator(10)])
     no_of_ingredients = models.IntegerField(default=0, editable=False)
     search_filter = models.ManyToManyField(SearchFilter)
