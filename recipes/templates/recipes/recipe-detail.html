@@ -20,5 +20,28 @@
 {% endblock %} 
 
 {% block content %}
-  
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center d-none d-md-block">
+          <!-- tooltip -->
+          <span class="tt" data-bs-placement="bottom" title="{{ recipe.title }}">
+            <img class="img-fluid" src="{{ recipe.image.url }}" alt="recipe-cover" />
+          </span>
+        </div>
+        <div class="col-md-5 text-center text-md-end">
+          <h1>
+            <div class="display-2">{{ recipe.title }}</div>
+            <div class="display-5 text-muted">{{ recipe.excerpt }}</div>
+          </h1>
+          <p class="lead my-4 text-muted">{{ recipe.content }}</p>
+          <div class="my-4">
+            {% for tag in search_filters %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

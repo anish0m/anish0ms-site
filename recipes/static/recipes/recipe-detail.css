@@ -2,3 +2,62 @@
   background-color: #0d261c;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
+
+/* intro section */
+#intro {
+  padding: 50px 0;
+  margin-top: 5rem;
+}
+
+#intro img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#intro .tt {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#intro .tt:hover::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a2b27;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+#intro h1 .display-2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1a2b27; 
+}
+
+#intro h1 .display-5 {
+  font-size: 2rem;
+  color: #46625a;
+  padding-top: 1rem;
+}
+
+#intro p.lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #46625a;
+}
+
+.tag {
+  background-color: #1a4c39;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  opacity: 0.5;
+}
