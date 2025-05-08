@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'anish0m',
     'blog',
     'bookstore',
+    'recipes',
 ]
 
 MIDDLEWARE = [

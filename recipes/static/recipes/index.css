@@ -16,7 +16,7 @@
   object-position: top;
   border: 5px solid white;
   border-radius: 12px;
-  background-color: #cfeee1;
+  background-color: #ffe1bf;
   transform: rotateZ(-5deg);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
@@ -28,7 +28,12 @@
   width: 10rem;
 }
 
-#my-contents {
+#welcome p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+#latest-recipes {
   background-color: white;
   padding: 2rem;
   border-radius: 12px;
@@ -37,11 +42,12 @@
   box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
 }
 
-#my-contents h2 {
+#latest-recipes h2 {
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
-#my-contents ul {
+#latest-recipes ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -49,44 +55,6 @@
   gap: 1rem;
 }
 
-#my-contents li {
+#latest-recipes li {
   flex: 1;
-}
-
-#my-contents article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#my-contents a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.2s ease;
-  padding: 1.5rem;
-  height: 23rem;
-  transform-origin: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  background-color: white;
-}
-
-#my-contents a:hover,
-#my-contents a:active {
-  transform: scale(1.1);
-  background-color: #0D261C;
-  color: white;
-}
-
-#my-contents img {
-  width: 5rem;
-  height: 5rem;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-#my-contents h3 {
-  margin: 1rem;
 }
