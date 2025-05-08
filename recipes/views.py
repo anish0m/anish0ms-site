@@ -50,7 +50,7 @@ class SingleRecipeView(View):
             comment.recipe = recipe
             comment.save()
 
-            return HttpResponseRedirect(reverse("book-detail-page", args=[slug]))
+            return HttpResponseRedirect(reverse("recipe-detail-page", args=[slug]))
 
         context = {
             "recipe": recipe,
