@@ -6,6 +6,7 @@
 }
 
 .post a {
+  height: 23rem;
   text-decoration: none;
   color: black;
   transition: all 0.2s ease;

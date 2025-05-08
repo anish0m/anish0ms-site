@@ -6,6 +6,7 @@
 }
 
 .recipe a {
+  height: 19rem;
   text-decoration: none;
   color: black;
   transition: all 0.2s ease;
