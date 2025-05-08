@@ -162,3 +162,32 @@ body {
   list-style-type: disc;
 }
 
+#reviews {
+  padding: 60px 0;
+}
+
+#reviews a {
+  text-decoration: none;
+  color: #000;
+}
+
+#reviews a:hover {
+  font-weight: bold;
+  color: #0d261c;
+}
+
+#reviews .list-group-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#reviews .list-group-item:last-child {
+  border-bottom: none;
+}
+
+#reviews .bi-star,
+#reviews .bi-star-half,
+#reviews .bi-star-fill {
+  border-color: #f39c12;
+  color: #f5c542;
+}
