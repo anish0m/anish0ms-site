@@ -26,7 +26,7 @@ class RecipeAdmin(admin.ModelAdmin):
     list_filter = ("search_filter", "date",)
     list_display = ("title", "date",)
     prepopulated_fields = {"slug": ("title",)}
-    inlines = [IngredientsInline]
+    inlines = [IngredientsInline, ProcedureInline]
 
 admin.site.register(Recipe, RecipeAdmin)
 admin.site.register(SearchFilter)  
