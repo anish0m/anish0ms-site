@@ -20,6 +20,7 @@ class Recipe(models.Model):
     title = models.CharField(max_length=150)
     excerpt = models.CharField(max_length=200)
     image = models.ImageField(upload_to="recipes", null=True)
+    cover = models.ImageField(upload_to="recipes/covers", null=True)
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True, db_index=True)
     description = models.TextField(validators=[MinLengthValidator(10)], null=True, blank=True)
