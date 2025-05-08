@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib import admin
 
-from .models import Ingredients, Recipe, SearchFilter
+from .models import Procedure, Ingredients, Recipe, SearchFilter
 
 # Register your models here.
 
@@ -9,6 +9,11 @@ class IngredientsInline(admin.TabularInline):
     model = Ingredients
     extra = 1
     fields = ("name", "amount")
+
+class ProcedureInline(admin.TabularInline):
+    model = Procedure
+    extra = 1
+    fields = ("step",)
 class RecipeAdminForm(forms.ModelForm):
     class Meta:
         model = Recipe
