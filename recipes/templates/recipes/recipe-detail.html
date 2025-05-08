@@ -48,27 +48,22 @@
   <section id="process">
     <div class="recipe-card container-fluid">
       <div class="left-section">
-        <h1>Healthy Brussel Sprout Salad Recipe</h1>
+        <h1>{{ recipe.title }} Recipe</h1>
         <h2>Ingredients</h2>
         <ul class="ingredients">
-          <li>5 cups brussel sprout, shaved</li>
-          <li>½ cup olive oil</li>
-          <li>⅓ cup lemon juice</li>
-          <li>1 cup roasted walnut</li>
-          <li>¼ cup dried berries of your choosing</li>
-          <li>½ cup ricotta cheese shaved</li>
-          <li>Salt and pepper</li>
+          {% for ingredient in recipe.ingredients.all %}
+            <li>{{ ingredient.name }} : {{ ingredient.amount }}</li>
+          {% endfor %}
         </ul>
-        <h2>Directions</h2>
+        <h2>Procedure</h2>
         <ol class="directions">
-          <li>Slice the brussel sprout using mandoline, set aside</li>
-          <li>Wash the sliced brussel sprout, and let it dry with vegetable drier</li>
-          <li>Mix brussel sprout, lemon juice, walnut, dried berries, and cheese into a bowl and toss it</li>
-          <li>Drizzle with olive oil</li>
+          {% for steps in recipe.procedure.all %}
+            <li>{{ steps.step }}</li>
+          {% endfor %}
         </ol>
       </div>
       <div class="right-section">
-        <img src="./static/recipes/images/anish0m.png" alt="anish0m's Recipe" class="recipe-image">
+        <img src="{{ recipe.cover.url }}" alt="anish0m's Recipe" class="recipe-image">
       </div>
     </div>
   </section>
