@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib import admin
 
-from .models import Procedure, Ingredients, Recipe, SearchFilter
+from .models import Procedure, Ingredients, Recipe, SearchFilter, Comment
 
 # Register your models here.
 
@@ -28,5 +28,9 @@ class RecipeAdmin(admin.ModelAdmin):
     prepopulated_fields = {"slug": ("title",)}
     inlines = [IngredientsInline, ProcedureInline]
 
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ("username", "recipe",)
+
 admin.site.register(Recipe, RecipeAdmin)
 admin.site.register(SearchFilter)  
+admin.site.register(Comment, CommentAdmin)
