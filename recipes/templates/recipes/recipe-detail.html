@@ -15,10 +15,166 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url "recipes-page" %}">Find Other Recipes</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#process">Procedure</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#reviews">Reviews</a>
+      </li>
     </ul>
   </nav>
 {% endblock %} 
 
 {% block content %}
-  
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center d-none d-md-block">
+          <!-- tooltip -->
+          <span class="tt" data-bs-placement="bottom" title="{{ recipe.title }}">
+            <img class="img-fluid" src="{{ recipe.image.url }}" alt="recipe-cover" />
+          </span>
+        </div>
+        <div class="col-md-5 text-center text-md-end">
+          <h1>
+            <div class="display-2">{{ recipe.title }}</div>
+            <div class="display-5 text-muted">{{ recipe.excerpt }}</div>
+          </h1>
+          <p class="lead my-4 text-muted">{{ recipe.description }}</p>
+          <div class="my-4">
+            {% for tag in search_filters %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="recipe-card container-fluid">
+      <div class="left-section">
+        <h1>{{ recipe.title }} Recipe</h1>
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          {% for ingredient in recipe.ingredients.all %}
+            <li>{{ ingredient.name }} : {{ ingredient.amount }}</li>
+          {% endfor %}
+        </ul>
+        <h2>Procedure</h2>
+        <ol class="directions">
+          {% for steps in recipe.procedure.all %}
+            <li>{{ steps.step }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="right-section">
+        <img src="{{ recipe.cover.url }}" alt="anish0m's Recipe" class="recipe-image">
+      </div>
+    </div>
+  </section>
+
+  {% load filters %}
+
+  <section id="reviews" class="bg-light">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2><i class="bi bi-chat-dots"></i> Reviews on this Recipe</h2>
+        <p class="lead">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#comment-modal">Share your thoughts here...</a>
+        </p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-8">
+          <div class="list-group">
+            {% for comment in comments %}
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  {{ comment.rating|render_stars|safe }}
+                </div>
+                <h5 class="mb-1">{{ comment.username }}</h5>
+                <p class="mb-1">{{ comment.text }}</p>
+                <small>{{ comment.created_at|date:"F j, Y" }}</small>
+              </div>
+            {% empty %}
+              <div class="list-group-item py-3 text-center">
+                <p class="mb-1 text-muted">No comments yet. Be the first to share your thoughts!</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="comment-modal" tabindex="-1" aria-labelledby="comment-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="comment-modal-label">Leave a Comment</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="{% url 'recipe-detail-page' recipe.slug %}">
+              {% csrf_token %}
+              <label for="username" class="form-label">Username:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill text-secondary"></i>
+                </span>
+                <input 
+                  type="text" 
+                  id="username" 
+                  name="username" 
+                  class="form-control" 
+                  placeholder="e.g. anish0m"
+                />
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter your username.">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <label for="rating" class="form-label">Rating:</label>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-star-fill text-secondary"></i>
+                </span>
+                <input 
+                  type="number" 
+                  id="rating" 
+                  name="rating" 
+                  class="form-control" 
+                  placeholder="e.g. 4.5" 
+                  step="0.1" 
+                  min="0.0" 
+                  max="5.0" 
+                />
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Rate between 0.0 and 5.0.">
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
+              </div>
+
+              <label for="text" class="form-label">Comment:</label>
+              <div class="mb-4 form-floating">
+                <textarea 
+                  class="form-control" 
+                  id="text" 
+                  name="text"
+                  style="height: 140px" >
+                </textarea>
+                <label for="text">Write your comment here...</label>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-lg btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

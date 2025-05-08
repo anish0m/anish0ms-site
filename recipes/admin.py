@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib import admin
 
-from .models import Ingredients, Recipe, SearchFilter
+from .models import Procedure, Ingredients, Recipe, SearchFilter, Comment
 
 # Register your models here.
 
@@ -9,6 +9,11 @@ class IngredientsInline(admin.TabularInline):
     model = Ingredients
     extra = 1
     fields = ("name", "amount")
+
+class ProcedureInline(admin.TabularInline):
+    model = Procedure
+    extra = 1
+    fields = ("step",)
 class RecipeAdminForm(forms.ModelForm):
     class Meta:
         model = Recipe
@@ -21,7 +26,11 @@ class RecipeAdmin(admin.ModelAdmin):
     list_filter = ("search_filter", "date",)
     list_display = ("title", "date",)
     prepopulated_fields = {"slug": ("title",)}
-    inlines = [IngredientsInline]
+    inlines = [IngredientsInline, ProcedureInline]
+
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ("username", "recipe",)
 
 admin.site.register(Recipe, RecipeAdmin)
 admin.site.register(SearchFilter)  
+admin.site.register(Comment, CommentAdmin)

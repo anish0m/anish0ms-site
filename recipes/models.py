@@ -20,9 +20,11 @@ class Recipe(models.Model):
     title = models.CharField(max_length=150)
     excerpt = models.CharField(max_length=200)
     image = models.ImageField(upload_to="recipes", null=True)
+    cover = models.ImageField(upload_to="recipes/covers", null=True)
     date = models.DateField(auto_now=True)
     slug = models.SlugField(unique=True, db_index=True)
-    procedure = models.TextField(validators=[MinLengthValidator(10)])
+    description = models.TextField(validators=[MinLengthValidator(10)], null=True, blank=True)
+    steps = models.TextField(validators=[MinLengthValidator(10)])
     no_of_ingredients = models.IntegerField(default=0, editable=False)
     search_filter = models.ManyToManyField(SearchFilter)
 
@@ -49,7 +51,13 @@ def update_no_of_ingredients_on_delete(sender, instance, **kwargs):
     recipe = instance.recipe
     recipe.no_of_ingredients = recipe.ingredients.count()
     recipe.save()
+    
+class Procedure(models.Model):
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, related_name="procedure")
+    step = models.CharField(max_length=200)
 
+    def __str__(self):
+        return self.step
 
 class Comment(models.Model):
     username = models.CharField(max_length=120)
