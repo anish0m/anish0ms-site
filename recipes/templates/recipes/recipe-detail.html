@@ -20,28 +20,31 @@
 {% endblock %} 
 
 {% block content %}
-  <section id="intro">
-    <div class="container-lg">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-5 text-center d-none d-md-block">
-          <!-- tooltip -->
-          <span class="tt" data-bs-placement="bottom" title="{{ recipe.title }}">
-            <img class="img-fluid" src="{{ recipe.image.url }}" alt="recipe-cover" />
-          </span>
-        </div>
-        <div class="col-md-5 text-center text-md-end">
-          <h1>
-            <div class="display-2">{{ recipe.title }}</div>
-            <div class="display-5 text-muted">{{ recipe.excerpt }}</div>
-          </h1>
-          <p class="lead my-4 text-muted">{{ recipe.description }}</p>
-          <div class="my-4">
-            {% for tag in search_filters %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          </div>
-        </div>
+  <div id="recipe_details">
+    <div class="recipe-card container-fluid">
+      <div class="left-section">
+        <h1>Healthy Brussel Sprout Salad Recipe</h1>
+        <h2>Ingredients</h2>
+        <ul class="ingredients">
+          <li>5 cups brussel sprout, shaved</li>
+          <li>½ cup olive oil</li>
+          <li>⅓ cup lemon juice</li>
+          <li>1 cup roasted walnut</li>
+          <li>¼ cup dried berries of your choosing</li>
+          <li>½ cup ricotta cheese shaved</li>
+          <li>Salt and pepper</li>
+        </ul>
+        <h2>Directions</h2>
+        <ol class="directions">
+          <li>Slice the brussel sprout using mandoline, set aside</li>
+          <li>Wash the sliced brussel sprout, and let it dry with vegetable drier</li>
+          <li>Mix brussel sprout, lemon juice, walnut, dried berries, and cheese into a bowl and toss it</li>
+          <li>Drizzle with olive oil</li>
+        </ol>
+      </div>
+      <div class="right-section">
+        <img src="./static/recipes/images/anish0m.png" alt="anish0m's Recipe" class="recipe-image">
       </div>
     </div>
-  </section>
+  </div>
 {% endblock %}
