@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  anish0m's Recipes
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static "/recipes/index.css" %}"/>
+  <link rel="stylesheet" href="{% static "/recipes/recipe.css" %}"/>
+{% endblock  %}
+
+{% block navbar %}
+  <nav class="navbar navbar-expand-md navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "recipes-page" %}">Explore All Recipes</a>
+      </li>
+    </ul>
+  </nav>
+{% endblock %} 
+
+{% block content %}
+  <section id="welcome">
+    <header>
+      <img src="{% static "images/anish0m.png" %}" alt="anish0m - The Baker"/>
+      <h2>anish0m's Recipes</h2>
+    </header>
+  </section>
+
+  <section id="latest-recipes">
+    <h2>My Latest Experiments</h2>
+    <ul>
+      {% for recipe in recipes %}
+        {% include "recipes/includes/recipe.html" %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
