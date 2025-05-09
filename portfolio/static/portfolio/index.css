@@ -15,7 +15,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ff6f61;
+  color: #1ed290;
   outline: none;
   text-decoration: none;
 }
@@ -75,7 +75,7 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
-  color: #ff6f61;
+  color: #1ed290;
   float: right;
   padding-top: 5px;
   transition: all 0.3s;
@@ -83,7 +83,7 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
@@ -206,7 +206,7 @@ a:focus {
     text-align: center;
     font-size: 18px;
     color: #222222;
-    background: #ff6f61;
+    background: #1ed290;
   }
 
   .sidebar .sidebar-footer a:last-child {
@@ -214,7 +214,7 @@ a:focus {
   }
 
   .sidebar .sidebar-footer a:hover {
-    color: #ff6f61;
+    color: #1ed290;
     background: #ffffff;
   }
 
@@ -282,7 +282,7 @@ a:focus {
 }
 
 .back-to-top i:hover {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .back-to-top {
@@ -323,7 +323,7 @@ a:focus {
 }
 
 .header p {
-  color: #ff6f61;
+  color: #1ed290;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -361,7 +361,7 @@ a:focus {
   position: relative;
   width: 50%;
   padding: 15px 0;
-  color: #ff6f61;
+  color: #1ed290;
   font-size: 20px;
   background: #222222;
   border-radius: 0;
@@ -369,7 +369,7 @@ a:focus {
 
 .large-btn .btn:last-child {
   color: #222222;
-  background: #ff6f61;
+  background: #1ed290;
 }
 
 .large-btn .btn i {
@@ -417,7 +417,7 @@ a:focus {
   height: 3px;
   bottom: 0;
   left: 0;
-  background: #ff6f61;
+  background: #1ed290;
 }
 
 /**********************************/
@@ -444,12 +444,12 @@ a:focus {
 .about .btn {
   border-radius: 0;
   color: #222222;
-  background: #ff6f61;
+  background: #1ed290;
   transition: all 0.3s;
 }
 
 .about .btn:hover {
-  color: #ff6f61;
+  color: #1ed290;
   background: #222222;
 }
 
@@ -474,14 +474,14 @@ a:focus {
 
 .about .progress {
   height: 5px;
-  border: 1px solid #ff6f61;
+  border: 1px solid #1ed290;
   border-radius: 0;
   background: #ffffff;
 }
 
 .about .progress .progress-bar {
   width: 1px;
-  background: #ff6f61;
+  background: #1ed290;
   border-radius: 0;
   transition: 1s;
 }
@@ -500,8 +500,8 @@ a:focus {
   position: relative;
   width: 100%;
   padding: 20px 0 20px 20px;
-  border-left: 1px solid #ff6f61;
-  border-bottom: 1px solid #ff6f61;
+  border-left: 1px solid #1ed290;
+  border-bottom: 1px solid #1ed290;
 }
 
 .education .col-md-6:first-child .edu-col {
@@ -538,14 +538,14 @@ a:focus {
   content: "";
   width: 11px;
   height: 11px;
-  background: #ff6f61;
+  background: #1ed290;
   top: 5px;
   left: -26px;
   border-radius: 5px;
 }
 
 .education .edu-col span i {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .education .edu-col h3 {
@@ -572,8 +572,8 @@ a:focus {
   position: relative;
   width: 100%;
   padding: 20px 0 20px 20px;
-  border-left: 1px solid #ff6f61;
-  border-bottom: 1px solid #ff6f61;
+  border-left: 1px solid #1ed290;
+  border-bottom: 1px solid #1ed290;
 }
 
 .experience .col-md-6:first-child .exp-col {
@@ -610,14 +610,14 @@ a:focus {
   content: "";
   width: 11px;
   height: 11px;
-  background: #ff6f61;
+  background: #1ed290;
   top: 5px;
   left: -26px;
   border-radius: 5px;
 }
 
 .experience .exp-col span i {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .experience .exp-col h3 {
@@ -662,7 +662,7 @@ a:focus {
 
 .certifications .srv-col i {
   font-size: 30px;
-  color: #ff6f61;
+  color: #1ed290;
   margin-bottom: 15px;
 }
 
@@ -717,14 +717,14 @@ a:focus {
   font-size: 13px;
   line-height: 15px;
   text-transform: uppercase;
-  border: 1px solid #ff6f61;
+  border: 1px solid #1ed290;
   background: #ffffff;
   transition: all 0.3s ease-in-out;
 }
 
 .projects #projects-flters li:hover,
 .projects #projects-flters li.filter-active {
-  background: #ff6f61;
+  background: #1ed290;
   color: #222222;
 }
 
@@ -764,7 +764,7 @@ a:focus {
   text-align: center;
   width: 45px;
   height: 35px;
-  background: #ff6f61;
+  background: #1ed290;
   transition: 0.2s linear;
 }
 
@@ -782,7 +782,7 @@ a:focus {
 
 .projects .projects-item figure .link-preview:hover i,
 .projects .projects-item figure .link-details:hover i {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .projects .projects-item figure .link-preview {
@@ -886,7 +886,7 @@ a:focus {
 }
 
 .review .review-text .ratting i {
-  color: #ff6f61;
+  color: #1ed290;
   font-size: 14px;
 }
 
@@ -937,7 +937,7 @@ a:focus {
 .review-slider .slick-prev:focus::before,
 .review-slider .slick-next:hover::before,
 .review-slider .slick-next:focus::before {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .review-slider .slick-prev::before,
@@ -966,7 +966,7 @@ a:focus {
 }
 
 .review-slider .slick-dots li.slick-active button:before {
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .review-slider.slick-slider {
@@ -997,7 +997,7 @@ a:focus {
 
 .contact .contact-info p i {
   width: 25px;
-  color: #ff6f61;
+  color: #1ed290;
 }
 
 .contact .contact-info p a {
@@ -1005,7 +1005,7 @@ a:focus {
 }
 
 .contact .contact-info p a:hover {
-  color: #ff6f61;
+  color: #1ed290;
   text-decoration: none;
 }
 
@@ -1018,7 +1018,7 @@ a:focus {
   height: 35px;
   padding: 5px 0;
   color: #222222;
-  background: #ff6f61;
+  background: #1ed290;
   border-radius: 0;
   margin-top: 15px;
   margin-right: 15px;
@@ -1030,7 +1030,7 @@ a:focus {
 }
 
 .contact .social a:hover {
-  color: #ff6f61;
+  color: #1ed290;
   background: #222222;
 }
 
@@ -1046,18 +1046,18 @@ a:focus {
 
 .contact .form .form-control:focus {
   box-shadow: none;
-  border-color: #ff6f61;
+  border-color: #1ed290;
 }
 
 .contact .form .btn {
   color: #222222;
-  background: #ff6f61;
+  background: #1ed290;
   border-radius: 0;
   transition: all 0.3s;
 }
 
 .contact .form .btn:hover {
-  color: #ff6f61;
+  color: #1ed290;
   background: #222222;
 }
 
@@ -1088,7 +1088,7 @@ a:focus {
 }
 
 .footer a {
-  color: #ff6f61;
+  color: #1ed290;
   font-weight: 600;
 }
 
