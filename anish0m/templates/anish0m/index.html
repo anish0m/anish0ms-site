@@ -7,6 +7,12 @@
 
 {% block css_files %}
   <link rel="stylesheet" href="{% static "/anish0m/index.css" %}"/>
+  <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 {% endblock  %}
 
 {% block content %}
@@ -57,4 +63,30 @@
       </li>
     </ul>
   </section>
+
+  <section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h2 class="fw-light">About The Owner</h2>
+							<h1 class="text-uppercase">Mohsina Tabassum Rifa</h1>
+							<h5 class="fw-light">Software Engineer</h5>
+							<h5 class="fw-light">Brain Station 23</h5>
+							<div class="d-flex align-items-center">
+								<p class="lead">Learn more about me...</p>
+								<a class="bi bi-box-arrow-in-up-right" href="{% url 'portfolio' %}"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img src="{% static 'anish0m/images/about.png' %}" alt="Mohsina Tabassum Rifa"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}
