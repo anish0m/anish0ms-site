@@ -342,6 +342,11 @@ a:focus {
   font-size: 25px;
 }
 
+.header h5 {
+  display: inline-block;
+  padding-top: 5px;
+}
+
 .header .typed-text {
   display: none;
 }
@@ -480,10 +485,9 @@ a:focus {
 }
 
 .about .progress .progress-bar {
-  width: 1px;
   background: #1ed290;
   border-radius: 0;
-  transition: 1s;
+  transition: width 1s ease;
 }
 
 /**********************************/

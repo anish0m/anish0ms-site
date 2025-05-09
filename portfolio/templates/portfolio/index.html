@@ -8,7 +8,11 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'images/favicon.png' %}"
+    />
 
     <!-- Google Fonts -->
     <link
@@ -25,9 +29,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
-    {% comment %} <link href="lib/slick/slick.css" rel="stylesheet" />
+    {% comment %}
+    <link href="lib/slick/slick.css" rel="stylesheet" />
     <link href="lib/slick/slick-theme.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" /> {% endcomment %}
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    {% endcomment %}
 
     <!-- Template Stylesheet -->
     <link href="{% static "portfolio/index.css" %}" rel="stylesheet" />
@@ -37,7 +43,8 @@
     <div class="wrapper">
       <div class="sidebar">
         <div class="sidebar-header">
-          <img src="{% static "portfolio/images/author.jpeg" %}" alt="Mohsina Tabassum Rifa" />
+          <img src="{% static "portfolio/images/author.jpeg" %}" alt="Mohsina
+          Tabassum Rifa" />
         </div>
         <div class="sidebar-content">
           <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -88,8 +95,12 @@
         </div>
         <div class="sidebar-footer">
           <a href="https://www.x.com/anish0m"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.facebook.com/mohsina452"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.linkedin.com/in/anish0m/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.facebook.com/mohsina452"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/anish0m/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
       <div class="content">
@@ -97,11 +108,8 @@
         <div class="header" id="header">
           <div class="content-inner">
             <h1>Mohsina Tabassum Rifa</h1>
-            <h3>Software Engineer I</h3>
-            <div class="typed-text">
-              Web Designer, Web Developer, Front End Developer, Apps Developer,
-              Graphic Designer
-            </div>
+            <h3>Software Engineer I @Brain Station 23</h3>
+            <h5>Competitive Programmer | Astronomy Enthusiast</h5>
           </div>
         </div>
         <!-- Header End -->
@@ -110,8 +118,8 @@
         <div class="large-btn">
           <div class="content-inner">
             <a class="btn" href="#"><i class="fa fa-download"></i>Resume</a>
-            <a class="btn" href="#"
-              ><i class="fa fa-hands-helping"></i>Hire Me</a
+            <a class="btn" href="#contact"
+              ><i class="fa fa-hands-helping"></i>Contact</a
             >
           </div>
         </div>
@@ -125,24 +133,27 @@
             </div>
             <div class="row align-items-center">
               <div class="col-md-6 col-lg-5">
-                <img src="img/about.jpg" alt="Image" />
+                <img src="{% static "portfolio/images/author.jpg" %}" alt="Mohsina Tabassum Rifa" />
               </div>
               <div class="col-md-6 col-lg-7">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  eu suscipit orci. Donec molestie velit id libero blandit, quis
-                  suscipit urna suscipit. Donec aliquet erat eu lacinia iaculis.
-                  Ut tempor tellus eu sem pharetra feugiat. Proin libero ligula,
-                  gravida at porttitor eget.
+                  I am currently working as a Software Engineer at Brain Station
+                  23. With a strong academic background and a passion for
+                  continuous growth, I enjoy problem solving, exploring complex
+                  systems and contributing to impactful projects. Outside of my
+                  professional life, I have a deep interest in astronomy and
+                  frequently engage in story writing. I am also passionate about
+                  academic competitions and have participated in various
+                  olympiads over the years.
                 </p>
-                <a class="btn" href="#">Hire Me</a>
+                <a class="btn" href="#contact">Contact Me</a>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="skills">
                   <div class="skill-name">
-                    <p>Design</p>
+                    <p>Development</p>
                     <p>85%</p>
                   </div>
                   <div class="progress">
@@ -152,27 +163,11 @@
                       aria-valuenow="85"
                       aria-valuemin="0"
                       aria-valuemax="100"
+                      style="width: 85%;"
                     ></div>
                   </div>
                   <div class="skill-name">
-                    <p>SEO</p>
-                    <p>95%</p>
-                  </div>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuenow="95"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="skills">
-                  <div class="skill-name">
-                    <p>Development</p>
+                    <p>Problem Solving</p>
                     <p>90%</p>
                   </div>
                   <div class="progress">
@@ -182,19 +177,89 @@
                       aria-valuenow="90"
                       aria-valuemin="0"
                       aria-valuemax="100"
+                      style="width: 90%;"
                     ></div>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skills">
                   <div class="skill-name">
-                    <p>Marketing</p>
-                    <p>85%</p>
+                    <p>Machine learning</p>
+                    <p>80%</p>
                   </div>
                   <div class="progress">
                     <div
                       class="progress-bar"
                       role="progressbar"
-                      aria-valuenow="85"
+                      aria-valuenow="80"
                       aria-valuemin="0"
                       aria-valuemax="100"
+                      style="width: 80%;"
+                    ></div>
+                  </div>
+                  <div class="skill-name">
+                    <p>Research & Innovation</p>
+                    <p>80%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 80%;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skills">
+                  <div class="skill-name">
+                    <p>Computer Networking</p>
+                    <p>60%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="60"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 60%;"
+                    ></div>
+                  </div>
+                  <div class="skill-name">
+                    <p>Testing & Quality Assurance</p>
+                    <p>70%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 70%;"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="skills">
+                  <div class="skill-name">
+                    <p>Awards & Recognition</p>
+                    <p>80%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      style="width: 80%;"
                     ></div>
                   </div>
                 </div>
