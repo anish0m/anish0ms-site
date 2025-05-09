@@ -118,7 +118,11 @@
 .banner_content {
   text-align: start;
   padding-left: 5rem;
-  padding-top: 5rem;
+  padding-top: 7rem;
+}
+
+.banner_content h5 {
+  margin-top: 1rem;
 }
 
 .banner_content h2 {
@@ -129,12 +133,9 @@
   margin-bottom: 1.3rem;
 }
 
-.banner_content h5 {
-  font-size: 1.5rem;
-}
-
 .banner_content p {
   margin-top: 12px;
+  color: #1f6a52;
 }
 
 .banner_content a {
