@@ -842,68 +842,68 @@ a:focus {
 }
 
 /**********************************/
-/*********** Review CSS ***********/
+/*********** Achievements CSS ***********/
 /**********************************/
-.review {
+.achievements {
   position: relative;
   background: #ffffff;
   border-bottom: 30px solid #0d261c;
 }
 
-.review .content-inner {
+.achievements .content-inner {
   position: relative;
   padding: 60px 30px;
   background: url(../img/quote.png) right bottom no-repeat;
 }
 
-.review .review-text p {
+.achievements .achievements-text p {
   font-size: 18px;
   font-style: italic;
 }
 
-.review .review-img {
+.achievements .achievements-img {
   display: flex;
   align-items: center;
 }
 
-.review .review-img img {
+.achievements .achievements-img img {
   width: 80px;
   height: 80px;
   object-fit: cover;
   margin-right: 15px;
 }
 
-.review .review-name h3 {
+.achievements .achievements-name h3 {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
 
-.review .review-name p {
+.achievements .achievements-name p {
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.review .review-text .ratting {
+.achievements .achievements-text .ratting {
   margin-bottom: 5px;
 }
 
-.review .review-text .ratting i {
+.achievements .achievements-text .ratting i {
   color: #1ed290;
   font-size: 14px;
 }
 
-.review .slick-slider:hover .slick-prev {
+.achievements .slick-slider:hover .slick-prev {
   left: 30px;
 }
 
-.review .slick-slider:hover .slick-next {
+.achievements .slick-slider:hover .slick-next {
   right: 30px;
 }
 
-.review-slider .slick-prev,
-.review-slider .slick-next {
+.achievements-slider .slick-prev,
+.achievements-slider .slick-next {
   width: 35px;
   height: 35px;
   z-index: 1;
@@ -912,68 +912,68 @@ a:focus {
   background: rgba(255, 111, 97, 0.7);
 }
 
-.review-slider .slick-prev {
+.achievements-slider .slick-prev {
   left: 55px;
 }
 
-.review-slider .slick-next {
+.achievements-slider .slick-next {
   right: 55px;
 }
 
-.review-slider.slick-slider:hover .slick-prev {
+.achievements-slider.slick-slider:hover .slick-prev {
   left: 15px;
   opacity: 1;
 }
 
-.review-slider.slick-slider:hover .slick-next {
+.achievements-slider.slick-slider:hover .slick-next {
   right: 15px;
   opacity: 1;
 }
 
-.review-slider .slick-prev:hover,
-.review-slider .slick-prev:focus,
-.review-slider .slick-next:hover,
-.review-slider .slick-next:focus {
+.achievements-slider .slick-prev:hover,
+.achievements-slider .slick-prev:focus,
+.achievements-slider .slick-next:hover,
+.achievements-slider .slick-next:focus {
   background: rgba(0, 0, 0, 0.7);
 }
 
-.review-slider .slick-prev:hover::before,
-.review-slider .slick-prev:focus::before,
-.review-slider .slick-next:hover::before,
-.review-slider .slick-next:focus::before {
+.achievements-slider .slick-prev:hover::before,
+.achievements-slider .slick-prev:focus::before,
+.achievements-slider .slick-next:hover::before,
+.achievements-slider .slick-next:focus::before {
   color: #1ed290;
 }
 
-.review-slider .slick-prev::before,
-.review-slider .slick-next::before {
+.achievements-slider .slick-prev::before,
+.achievements-slider .slick-next::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 18px;
   color: #ffffff;
 }
 
-.review-slider .slick-prev::before {
+.achievements-slider .slick-prev::before {
   content: "\f104";
 }
 
-.review-slider .slick-next::before {
+.achievements-slider .slick-next::before {
   content: "\f105";
 }
 
-.review-slider .slick-dots {
+.achievements-slider .slick-dots {
   bottom: 15px;
 }
 
-.review-slider .slick-dots li button:before {
+.achievements-slider .slick-dots li button:before {
   color: #ffffff;
   font-size: 15px;
 }
 
-.review-slider .slick-dots li.slick-active button:before {
+.achievements-slider .slick-dots li.slick-active button:before {
   color: #1ed290;
 }
 
-.review-slider.slick-slider {
+.achievements-slider.slick-slider {
   margin-bottom: 0;
 }
 
