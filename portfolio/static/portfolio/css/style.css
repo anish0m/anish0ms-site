@@ -908,7 +908,7 @@ a:focus {
     z-index: 1;
     opacity: 0;
     transition: .5s;
-    background: rgba(255, 111, 97, .7);
+    background: rgba(49, 196, 93, .7);
 }
 
 .review-slider .slick-prev {
