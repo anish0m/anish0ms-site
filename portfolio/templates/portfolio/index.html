@@ -27,9 +27,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
-    <link href="lib/slick/slick.css" rel="stylesheet" />
-    <link href="lib/slick/slick-theme.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link
+      href="{% static 'portfolio/lib/slick/slick.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'portfolio/lib/slick/slick-theme.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'portfolio/lib/lightbox/css/lightbox.min.css' %}"
+      rel="stylesheet"
+    />
 
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}" />
@@ -701,12 +710,12 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/slick/slick.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="{% static 'portfolio/lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'portfolio/lib/slick/slick.min.js' %}"></script>
+    <script src="{% static 'portfolio/lib/typed/typed.min.js' %}"></script>
+    <script src="{% static 'portfolio/lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'portfolio/lib/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'portfolio/lib/lightbox/js/lightbox.min.js' %}"></script>
 
     <!-- Template Javascript -->
     <script src="{% static 'portfolio/js/main.js' %}"></script>
