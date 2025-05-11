@@ -52,7 +52,10 @@
     <div class="wrapper">
       <div class="sidebar">
         <div class="sidebar-header">
-          <img src="{% static 'portfolio/img/profile.jpeg' %}" alt="Mohsina Tabassum Rifa" />
+          <img
+            src="{% static 'portfolio/img/profile.jpeg' %}"
+            alt="Mohsina Tabassum Rifa"
+          />
         </div>
         <div class="sidebar-content">
           <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -145,7 +148,10 @@
             </div>
             <div class="row align-items-center">
               <div class="col-md-6 col-lg-5">
-                <img src="{% static 'portfolio/img/about.jpg' %}" alt="Mohsina Tabassum Rifa" />
+                <img
+                  src="{% static 'portfolio/img/about.jpg' %}"
+                  alt="Mohsina Tabassum Rifa"
+                />
               </div>
               <div class="col-md-6 col-lg-7">
                 <p>
@@ -465,96 +471,74 @@
               <div class="col-lg-12">
                 <ul id="portfolio-flters">
                   <li data-filter="*" class="filter-active">All</li>
-                  <li data-filter=".web-des">Design</li>
+                  <li data-filter=".web-des">Research</li>
                   <li data-filter=".web-dev">Development</li>
-                  <li data-filter=".dig-mar">Marketing</li>
+                  <li data-filter=".dig-mar">Machine Learning</li>
                 </ul>
               </div>
             </div>
             <div class="row portfolio-container">
-              <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                <div class="portfolio-wrap">
-                  <figure>
-                    <img src="img/portfolio-1.jpg" class="img-fluid" alt="" />
-                    <a
-                      href="img/portfolio-1.jpg"
-                      data-lightbox="portfolio"
-                      data-title="Project Name"
-                      class="link-preview"
-                      title="Preview"
-                      ><i class="fa fa-eye"></i
-                    ></a>
-                    <a href="#" class="link-details" title="More Details"
-                      ><i class="fa fa-link"></i
-                    ></a>
-                    <a class="portfolio-title" href="#"
-                      >Project Name <span>Web Design</span></a
-                    >
-                  </figure>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item web-des">
-                <div class="portfolio-wrap">
-                  <figure>
-                    <img src="img/portfolio-2.jpg" class="img-fluid" alt="" />
-                    <a
-                      href="img/portfolio-2.jpg"
-                      class="link-preview"
-                      data-lightbox="portfolio"
-                      data-title="Project Name"
-                      title="Preview"
-                      ><i class="fa fa-eye"></i
-                    ></a>
-                    <a href="#" class="link-details" title="More Details"
-                      ><i class="fa fa-link"></i
-                    ></a>
-                    <a class="portfolio-title" href="#"
-                      >Project Name <span>Web Design</span></a
-                    >
-                  </figure>
-                </div>
-              </div>
-
               <div class="col-lg-4 col-md-6 portfolio-item web-dev">
                 <div class="portfolio-wrap">
                   <figure>
-                    <img src="img/portfolio-3.jpg" class="img-fluid" alt="" />
+                    <img
+                      src="{% static 'portfolio/img/projects/workshop.jpg' %}"
+                      class="img-fluid"
+                      alt="Workshop"
+                    />
                     <a
-                      href="img/portfolio-3.jpg"
-                      class="link-preview"
+                      href="{% static 'portfolio/img/projects/workshop.jpg' %}"
                       data-lightbox="portfolio"
                       data-title="Project Name"
+                      class="link-preview"
                       title="Preview"
                       ><i class="fa fa-eye"></i
                     ></a>
-                    <a href="#" class="link-details" title="More Details"
+                    <a
+                      href="https://github.com/mohsina-rifa/Workshop"
+                      class="link-details"
+                      title="Github Link"
                       ><i class="fa fa-link"></i
                     ></a>
                     <a class="portfolio-title" href="#"
-                      >Project Name <span>Web Development</span></a
+                      >Workshop
+                      <span
+                        >An interactive web-application to organize your
+                        everyday tasks with kanban-board.</span
+                      ></a
                     >
                   </figure>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+              <div class="col-lg-4 col-md-6 portfolio-item web-des">
                 <div class="portfolio-wrap">
                   <figure>
-                    <img src="img/portfolio-4.jpg" class="img-fluid" alt="" />
+                    <img
+                      src="{% static 'portfolio/img/projects/deepassist_vision.jpg' %}"
+                      class="img-fluid"
+                      alt="DeepAssist Vision"
+                    />
                     <a
-                      href="img/portfolio-4.jpg"
-                      class="link-preview"
+                      href="{% static 'portfolio/img/projects/deepassist_vision.jpg' %}"
                       data-lightbox="portfolio"
                       data-title="Project Name"
+                      class="link-preview"
                       title="Preview"
                       ><i class="fa fa-eye"></i
                     ></a>
-                    <a href="#" class="link-details" title="More Details"
+                    <a
+                      href="https://drive.google.com/file/d/1p6GJOwxQcdQgBI0YfMGVMmlDegyKD2Ti/view?usp=sharing"
+                      class="link-details"
+                      title="Paper Link"
                       ><i class="fa fa-link"></i
                     ></a>
                     <a class="portfolio-title" href="#"
-                      >Project Name <span>Web Development</span></a
+                      >DeepAssist Vision
+                      <span
+                        >Autism Detection with Technology-driven Gaze
+                        Tracking</span
+                      ></a
                     >
                   </figure>
                 </div>
@@ -563,20 +547,31 @@
               <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
                 <div class="portfolio-wrap">
                   <figure>
-                    <img src="img/portfolio-5.jpg" class="img-fluid" alt="" />
+                    <img
+                      src="{% static 'portfolio/img/projects/clubnet.jpg' %}"
+                      class="img-fluid"
+                      alt="ClubNet"
+                    />
                     <a
-                      href="img/portfolio-5.jpg"
+                      href="{% static 'portfolio/img/projects/clubnet.jpg' %}"
                       class="link-preview"
                       data-lightbox="portfolio"
                       data-title="Project Name"
                       title="Preview"
                       ><i class="fa fa-eye"></i
                     ></a>
-                    <a href="#" class="link-details" title="More Details"
+                    <a
+                      href="https://github.com/Sheikh-Tafsir/fisUnofficial"
+                      class="link-details"
+                      title="Github Link"
                       ><i class="fa fa-link"></i
                     ></a>
                     <a class="portfolio-title" href="#"
-                      >Project Name <span>Digital Marketing</span></a
+                      >ClubNet
+                      <span
+                        >A mobile application for a club event management and
+                        notification.</span
+                      ></a
                     >
                   </figure>
                 </div>
@@ -585,20 +580,195 @@
               <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
                 <div class="portfolio-wrap">
                   <figure>
-                    <img src="img/portfolio-6.jpg" class="img-fluid" alt="" />
+                    <img
+                      src="{% static 'portfolio/img/projects/autopredictor.jpg' %}"
+                      class="img-fluid"
+                      alt="AutoPredictor"
+                    />
                     <a
-                      href="img/portfolio-6.jpg"
+                      href="{% static 'portfolio/img/projects/autopredictor.jpg' %}"
                       class="link-preview"
                       data-lightbox="portfolio"
                       data-title="Project Name"
                       title="Preview"
                       ><i class="fa fa-eye"></i
                     ></a>
-                    <a href="#" class="link-details" title="More Details"
+                    <a
+                      href="https://github.com/anish0m/AutoPredictor"
+                      class="link-details"
+                      title="Github Link"
                       ><i class="fa fa-link"></i
                     ></a>
                     <a class="portfolio-title" href="#"
-                      >Project Name <span>Digital Marketing</span></a
+                      >AutoPredictor
+                      <span
+                        >A Machine Learning based application to estimate the
+                        price of a car based on given data.</span
+                      ></a
+                    >
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img
+                      src="{% static 'portfolio/img/projects/krunch.jpg' %}"
+                      class="img-fluid"
+                      alt="Krunch"
+                    />
+                    <a
+                      href="{% static 'portfolio/img/projects/krunch.jpg' %}"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Project Name"
+                      title="Preview"
+                      ><i class="fa fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Sheikh-Tafsir/KrunchFront"
+                      class="link-details"
+                      title="Github Link"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                    <a class="portfolio-title" href="#"
+                      >Krunch
+                      <span
+                        >A restaurant management website for advertisement and
+                        processing order.</span
+                      ></a
+                    >
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img
+                      src="{% static 'portfolio/img/projects/css_niffler.jpg' %}"
+                      class="img-fluid"
+                      alt="CSS-Niffler"
+                    />
+                    <a
+                      href="{% static 'portfolio/img/projects/css_niffler.jpg' %}"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Project Name"
+                      title="Preview"
+                      ><i class="fa fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/anish0m/CSS_Niffler"
+                      class="link-details"
+                      title="Github Link"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                    <a class="portfolio-title" href="#"
+                      >CSS_Niffler
+                      <span
+                        >An interactive website to learn CSS through
+                        visualization.</span
+                      ></a
+                    >
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img
+                      src="{% static 'portfolio/img/projects/aastha.jpg' %}"
+                      class="img-fluid"
+                      alt="AASTHA"
+                    />
+                    <a
+                      href="{% static 'portfolio/img/projects/aastha.jpg' %}"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Project Name"
+                      title="Preview"
+                      ><i class="fa fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/Meowthhh/AASTHA"
+                      class="link-details"
+                      title="Github Link"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                    <a class="portfolio-title" href="#"
+                      >AASTHA
+                      <span
+                        >An emergency blood-bank management application to help
+                        people find out nearby blood-banks and donors.</span
+                      ></a
+                    >
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img
+                      src="{% static 'portfolio/img/projects/scientific_calculator.jpg' %}"
+                      class="img-fluid"
+                      alt="Scientific Calculator"
+                    />
+                    <a
+                      href="{% static 'portfolio/img/projects/scientific_calculator.jpg' %}"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Project Name"
+                      title="Preview"
+                      ><i class="fa fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/anish0m/Scientific_Calculator."
+                      class="link-details"
+                      title="Github Link"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                    <a class="portfolio-title" href="#"
+                      >Scientific Calculator
+                      <span
+                        >A scientific calculator with three modes using Object
+                        Oriented Programming concept.</span
+                      ></a
+                    >
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <img
+                      src="{% static 'portfolio/img/projects/jumping_jett.jpg' %}"
+                      class="img-fluid"
+                      alt=""
+                    />
+                    <a
+                      href="{% static 'portfolio/img/projects/jumping_jett.jpg' %}"
+                      class="link-preview"
+                      data-lightbox="portfolio"
+                      data-title="Project Name"
+                      title="Preview"
+                      ><i class="fa fa-eye"></i
+                    ></a>
+                    <a
+                      href="https://github.com/anish0m/Jumping_Jett"
+                      class="link-details"
+                      title="Github Link"
+                      ><i class="fa fa-link"></i
+                    ></a>
+                    <a class="portfolio-title" href="#"
+                      >Jumping Jett
+                      <span
+                        >A 2D game to jump over obstacles and gain points.</span
+                      ></a
                     >
                   </figure>
                 </div>
@@ -681,7 +851,8 @@
                     </div>
                   </div>
                 </div>
-              </div> <div class="col-md-12">
+              </div>
+              <div class="col-md-12">
                 <div class="review-slider-item">
                   <div class="review-text">
                     <p>
@@ -795,7 +966,7 @@
                   </div>
                 </div>
               </div>
-               <div class="col-md-12">
+              <div class="col-md-12">
                 <div class="review-slider-item">
                   <div class="review-text">
                     <p>
