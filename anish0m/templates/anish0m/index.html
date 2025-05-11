@@ -12,7 +12,7 @@
 {% block content %}
   <section id="welcome">
     <header>
-      <img src="{% static "blog/images/anish0m.png" %}" alt="anish0m - The Owner"/>
+      <img src="{% static "images/anish0m.jpeg" %}" alt="anish0m - The Owner"/>
       <h2>@anish0m's</h2>
     </header>
   </section>
@@ -57,4 +57,31 @@
       </li>
     </ul>
   </section>
+
+  <section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h2 class="fw-light">About The Owner</h2>
+							<h1 class="text-uppercase">Mohsina Tabassum Rifa</h1>
+							<h4 class="fw-light">Software Engineer</h4>
+							<h4 class="fw-light">Brain Station 23</h4>
+							<h5 class="fw-light">Competitive Programmer | Astronomy Enthusiast</h5>
+							<div class="d-flex align-items-center">
+								<p class="lead">Learn more about me...</p>
+								<a class="bi bi-box-arrow-in-up-right" href="{% url 'portfolio' %}" target="_blank"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img src="{% static 'anish0m/images/about.png' %}" alt="Mohsina Tabassum Rifa"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 {% endblock %}

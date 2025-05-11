@@ -1,5 +1,5 @@
 #welcome {
-  background: linear-gradient(to right top, #267355, #0D261C);
+  background: linear-gradient(to right top, #267355, #0d261c);
   padding: 6rem 12%;
 }
 
@@ -75,7 +75,7 @@
 #my-contents a:hover,
 #my-contents a:active {
   transform: scale(1.1);
-  background-color: #0D261C;
+  background-color: #0d261c;
   color: white;
 }
 
@@ -89,4 +89,75 @@
 
 #my-contents h3 {
   margin: 1rem;
+}
+
+/* Minimal Home Banner Area */
+.home_banner_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 5rem 0 5rem;
+  padding: 3rem 5rem 0 5rem;
+}
+
+.banner_inner {
+  width: 100%;
+}
+
+.home_right_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_right_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner_content {
+  text-align: start;
+  padding-left: 5rem;
+  padding-top: 7rem;
+}
+
+.banner_content h5 {
+  margin-top: 1rem;
+}
+
+.banner_content h2 {
+  margin-bottom: 1rem;
+}
+
+.banner_content h1 {
+  margin-bottom: 1.3rem;
+}
+
+.banner_content p {
+  margin-top: 12px;
+  color: #1f6a52;
+}
+
+.banner_content a {
+  color: #333333;
+  font-size: 1.5rem;
+  align-items: center;
+  margin-left: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .home_right_img {
+    display: none;
+  }
+
+  .banner_content {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_content h1 {
+    font-size: 40px;
+  }
 }
