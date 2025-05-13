@@ -2,6 +2,13 @@ from django.db import models
 
 # Create your models here.
 
+class Technology(models.Model):
+    name = models.CharField(max_length=25)
+
+    def __str__(self):
+        return self.name
+
+
 class Project(models.Model):
     CATEGORY_CHOICES = [
         ('web-dev', 'Development'),
@@ -15,6 +22,7 @@ class Project(models.Model):
     image = models.ImageField(upload_to='projects/')
     github_link = models.URLField()
     filter_tag = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
+    technologies = models.ManyToManyField(Technology)
 
     def __str__(self):
         return self.title
