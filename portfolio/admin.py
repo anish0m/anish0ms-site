@@ -1,6 +1,19 @@
 from django.contrib import admin
+from django import forms
+from .models import Project, Technology
 
-from .models import Project
+class ProjectAdminForm(forms.ModelForm):
+    class Meta:
+        model = Project
+        fields = "__all__"
+        widgets = {
+            "technologies": forms.CheckboxSelectMultiple()
+        }
 
-# Register your models here.
-admin.site.register(Project)
+class ProjectAdmin(admin.ModelAdmin):
+    form = ProjectAdminForm
+    list_display = ("title", "filter_tag",)
+    list_filter = ("filter_tag", "technologies",)
+
+admin.site.register(Project, ProjectAdmin)
+admin.site.register(Technology)
