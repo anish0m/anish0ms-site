@@ -20,9 +20,15 @@ class Project(models.Model):
     subtitle = models.CharField(max_length=300)
     description = models.TextField()
     image = models.ImageField(upload_to='projects/')
+    modal_image = models.ImageField(upload_to='projects/modal/', null=True, blank=True)
     github_link = models.URLField()
     filter_tag = models.CharField(max_length=20, choices=CATEGORY_CHOICES)
     technologies = models.ManyToManyField(Technology)
+
+    def save(self, *args, **kwargs):
+        if not self.modal_image:
+            self.modal_image = self.image
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title
