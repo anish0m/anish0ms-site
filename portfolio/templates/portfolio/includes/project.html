@@ -51,58 +51,24 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body d-flex" style="flex-direction: row">
-        <!-- Image on the left side -->
+      <div class="modal-body d-flex">
         <img
           src="{{ project.image.url }}"
           alt="{{ project.title }}"
           class="modal-img"
-          style="max-width: 50%; object-fit: cover"
         />
 
-        <!-- Text and Description on the right side -->
-        <div
-          class="modal-text d-flex flex-column"
-          style="flex-grow: 1; padding-left: 20px"
-        >
+        <div class="modal-text d-flex flex-column">
           <h1>{{ project.title }}</h1>
           <h3>{{ project.subtitle }}</h3>
           <p>{{ project.description }}</p>
 
-          <!-- Footer placed at the bottom -->
-          <div
-            class="modal-footer mt-auto"
-            style="
-              display: flex;
-              justify-content: flex-start;
-              width: 100%;
-              padding-left: 0;
-            "
-          >
-            <div class="technologies-used" style="flex-grow: 1">
+          <div class="modal-footer mt-auto">
+            <div class="technologies-used">
               <strong>Technologies:</strong>
-              <ul
-                class="mb-0 list-unstyled"
-                style="
-                  padding-left: 0;
-                  margin-left: 0;
-                  display: flex;
-                  flex-wrap: wrap;
-                  gap: 10px;
-                "
-              >
+              <ul class="mb-0 list-unstyled">
                 {% for tech in project.technologies.all %}
-                <li
-                  style="
-                    background-color: #31c45d;
-                    color: #fff;
-                    border-radius: 3px;
-                    font-size: 14px;
-                    padding: 5px 10px;
-                  "
-                >
-                  {{ tech.name }}
-                </li>
+                <li>{{ tech.name }}</li>
                 {% endfor %}
               </ul>
             </div>

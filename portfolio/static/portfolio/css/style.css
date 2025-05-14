@@ -3,7 +3,7 @@
 /**********************************/
 body {
     color: #666666;
-    background: #0d261c;
+    background: #4f7263;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -47,7 +47,7 @@ a:focus {
     width: 100%;
     padding: 15px;
     float: left;
-    background: #0d261c;
+    background: #4f7263;
 }
 
 .wrapper .sidebar-header,
@@ -112,7 +112,7 @@ a:focus {
         content: "";
         width: 100%;
         height: 30px;
-        background: #0d261c;
+        background: #4f7263;
         z-index: 1;
     }
     
@@ -349,7 +349,7 @@ a:focus {
 
 .large-btn .content-inner {
     font-size: 0;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 .large-btn .btn {
@@ -424,7 +424,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 
@@ -492,7 +492,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 .education .edu-col {
@@ -565,7 +565,7 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 .experience .exp-col {
@@ -652,7 +652,7 @@ a:focus {
     position: relative;
     padding: 60px 30px 30px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 .service .srv-col {
@@ -699,7 +699,7 @@ a:focus {
     position: relative;
     padding: 60px 30px 30px 30px;
     background: #ffffff;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 .portfolio #portfolio-flters {
@@ -846,7 +846,7 @@ a:focus {
 .review {
     position: relative;
     background: #ffffff;
-    border-bottom: 30px solid #0d261c;
+    border-bottom: 30px solid #4f7263;
 }
 
 .review .content-inner {
@@ -1073,7 +1073,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 30px 30px 0 30px;
-    background: #0d261c;
+    background: #4f7263;
 }
 
 .footer .col-md-6:last-child {

@@ -5,6 +5,7 @@
 
 .modal-body {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   padding: 20px;
 }
@@ -17,6 +18,8 @@
 
 .modal-text {
   flex: 1;
+  flex-grow: 1;
+  padding-left: 20px;
 }
 
 .modal-text h1 {
@@ -31,7 +34,29 @@
   margin-bottom: 1rem;
 }
 
-.technologies-used ul {
-  padding-left: 1.2rem;
-  list-style: disc;
+.modal-footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 0;
+}
+
+.modal-footer .technologies-used {
+  flex-grow: 1;
+}
+
+.modal-footer .technologies-used ul {
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal-footer .technologies-used li {
+  background-color: #4f7263;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px 10px;
 }
