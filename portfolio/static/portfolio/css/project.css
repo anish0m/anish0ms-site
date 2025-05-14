@@ -1,0 +1,37 @@
+/* portfolio/static/portfolio/css/project.css */
+.project-modal {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.modal-img {
+  max-width: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modal-text {
+  flex: 1;
+}
+
+.modal-text h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-text h3 {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.technologies-used ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
