@@ -53,9 +53,11 @@
           <h1>{{ project.title }}</h1>
           <h3>{{ project.subtitle }}</h3>
           <p>{{ project.description }}</p>
+        </div>
+        <div class="modal-footer">
           <div class="technologies-used">
             <strong>Technologies:</strong>
-            <ul>
+            <ul class="mb-0">
               {% for tech in project.technologies.all %}
               <li>{{ tech.name }}</li>
               {% endfor %}
