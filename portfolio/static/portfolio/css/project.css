@@ -1,4 +1,3 @@
-/* portfolio/static/portfolio/css/project.css */
 .project-modal {
   border-radius: 12px;
   overflow: hidden;
@@ -21,12 +20,13 @@
 }
 
 .modal-text h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .modal-text h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #777;
   margin-bottom: 1rem;
 }
