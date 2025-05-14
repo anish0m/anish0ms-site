@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="{% static "/anish0m/index.css" %}"/>
 {% endblock  %}
 
+{% block navbar %}
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#about-me">About the Owner</a>
+    </li>
+  </ul>
+{% endblock %}
+
 {% block content %}
   <section id="welcome">
     <header>
@@ -58,7 +66,7 @@
     </ul>
   </section>
 
-  <section class="home_banner_area">
+  <section id="about-me" class="home_banner_area">
 		<div class="banner_inner">
 			<div class="container">
 				<div class="row">
