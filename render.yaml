@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-site
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn my_site.wsgi:application
+    autoDeploy: true
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: my_site.settings
+      # Add other environment variables as needed
