@@ -8,4 +8,9 @@ services:
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: my_site.settings
-      # Add other environment variables as needed
+      - key: SECRET_KEY
+        value: django-insecure-f@irime@*y6%9$)j4xh*1e#x!-cm+&ren6b+^1v#ldyj=ca37!
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: later-update-with-domain.com
