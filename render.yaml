@@ -14,3 +14,9 @@ services:
         value: False
       - key: ALLOWED_HOSTS
         value: https://anish0ms-site.onrender.com
+      - key: CLOUDINARY_CLOUD_NAME
+        value: drnrw0sqq
+      - key: CLOUDINARY_API_KEY
+        value: 773439715866931
+      - key: CLOUDINARY_API_SECRET
+        value: RqXN6KB5O5iY2yXeB0hlEijdExs
